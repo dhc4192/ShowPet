@@ -1,4 +1,4 @@
-# ShowPets
+<img src='ShowPets-Logo-small.png'><span style="font-size: 50px">ShowPets</span></img>
 
 - [Overview](#overview)
 - [MVP](#mvp)
