@@ -1,4 +1,4 @@
-# ShowPet
+# ShowPets
 
 > The Project Planning section **should be completed** for your project pitch with instructors.
 >
