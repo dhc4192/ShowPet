@@ -24,6 +24,8 @@
 
 _**ShowPets** is an application where users will be able to show off their loving pets! Users will be able to add an image along with other information about their pets such as, name, age and a brief description. Users will be able to view all of the pets uploaded, however, they will be able to edit only their own posts._
 
+[🔝](#ShowPets)
+
 ---
 
 ## MVP
@@ -50,13 +52,12 @@ _The **ShowPets** will have an authentication and verification process which all
 
 > Use this section to list all supporting libraries and dependencies, and their role in the project.
 
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|   Library    | Description                                                           |
+| :----------: | :-------------------------------------------------------------------- |
+|    React     | _Will be used to create the front-end of the application._            |
+| React Router | _Will be used to route and link certain components in the front-end._ |
+|     Ruby     | _Can't use rails without Ruby._                                       |
+|    Rails     | _Will be used to set up the back-end of the application._             |
 
 [🔝](#ShowPets)
 
@@ -170,7 +171,8 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- _The ability for users to comment on other pet posts._
+- _The ablitly for users to like a pet post._
 
 [🔝](#ShowPets)
 
