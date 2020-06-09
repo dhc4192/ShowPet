@@ -1,4 +1,6 @@
-<img src='ShowPets-Logo-small.png'><span style="font-size: 50px">ShowPets</span></img>
+# ShowPets
+
+<img src='Assets/Images/ShowPets-Logo-small.png'></img>
 
 - [Overview](#overview)
 - [MVP](#mvp)
@@ -52,12 +54,13 @@ _The **ShowPets** will have an authentication and verification process which all
 
 > Use this section to list all supporting libraries and dependencies, and their role in the project.
 
-|   Library    | Description                                                           |
-| :----------: | :-------------------------------------------------------------------- |
-|    React     | _Will be used to create the front-end of the application._            |
-| React Router | _Will be used to route and link certain components in the front-end._ |
-|     Ruby     | _Can't use rails without Ruby._                                       |
-|    Rails     | _Will be used to set up the back-end of the application._             |
+|     Library      | Description                                                           |
+| :--------------: | :-------------------------------------------------------------------- |
+|      React       | _Will be used to create the front-end of the application._            |
+| React Router Dom | _Will be used to route and link certain components in the front-end._ |
+|      Axios       | _Will be used to to call data from the backend._                      |
+|       Ruby       | _Can't use rails without Ruby._                                       |
+|      Rails       | _Will be used to set up the back-end of the application._             |
 
 [🔝](#ShowPets)
 
@@ -67,31 +70,16 @@ _The **ShowPets** will have an authentication and verification process which all
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
+- Mobile Wireframe
 
-![Dummy Link](url)
+  > https://www.figma.com/file/P7UJCmIUag7RGazooprsqn/ShowPets-Wireframe?node-id=0%3A1 > <img src="Assets/Structures/Mobile-Wireframe.png"/>
 
-- Desktop Landing
+- Tablet Wireframe
 
-![Dummy Link](url)
+  > https://www.figma.com/file/P7UJCmIUag7RGazooprsqn/ShowPets-Wireframe?node-id=3%3A10 > <img src="Assets/Structures/Tablet-Wireframe.png"/>
 
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
+- Desktop Wireframe
+  > https://www.figma.com/file/P7UJCmIUag7RGazooprsqn/ShowPets-Wireframe?node-id=3%3A11 > <img src="Assets/Structures/Desktop-Wireframe.png"/>
 
 [🔝](#ShowPets)
 
@@ -99,7 +87,7 @@ _The **ShowPets** will have an authentication and verification process which all
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components.
+> https://app.lucidchart.com/documents/view/bb89b87d-bcda-41cf-b85e-25081a7c223d/0_0 > <img src="Assets/Structures/ShowPets-Component-Tree.png"/>
 
 [🔝](#ShowPets)
 
@@ -107,19 +95,46 @@ _The **ShowPets** will have an authentication and verification process which all
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.
-
-```structure
+```
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
+|__ Assets/
+      |__ Images
+      |__ Structures
+      |__ Font
+|__ Components/
+      |__ Header
+            |__ Header.css
+            |__ Header.jsx
+      |__ Main
+            |__ Main.css
+            |__ Main.jsx
+      |__ Pets
+            |__ Pets.css
+            |__ Pets.jsx
+      |__ Pet
+            |__ Pet.css
+            |__ Pet.jsx
+      |__ Description
+            |__ Descriptions.css
+            |__ Descriptions.jsx
+      |__ CRUD
+            |__ CreatePet.jsx
+            |__ UpdatePet.jsx
+      |__ SignIn
+            |__ SignIn.css
+            |__ SignIn.jsx
+      |__ SignUp
+            |__ SignUp.css
+            |__ SignUp.jsx
 |__ services/
+      |__ api-helper.js
+      |__ auth.js
+      |__ descriptions.js
+      |__ pets.js
+|__ App.css
+|__ App.js
+
 
 ```
 
@@ -129,15 +144,18 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
-
-|  Component   |    Type    | state | props | Description                                                      |
-| :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|  Component   |    Type    | state | props | Description                                                                         |
+| :----------: | :--------: | :---: | :---: | :---------------------------------------------------------------------------------- |
+|    Header    | functional |   n   |   y   | _The header will contain the logo, the title, welcome user, and the create button._ |
+|     Main     |   class    |   y   |   y   | _The main will be the source of all states._                                        |
+|     Pets     | functional |   n   |   y   | _The Pets will be render the all pets._                                             |
+|     Pet      | functional |   n   |   y   | _The Pet will render a single specified pet._                                       |
+| Descriptions | functional |   n   |   y   | _The Description will render the information of the specified pet._                 |
+|  CreatePet   |   class    |   y   |   y   | _The CreatePet will be used to add a new pet._                                      |
+|  UpdatePet   |   class    |   y   |   y   | _The UpdatePet will be used to update specified pet._                               |
+|    SignIn    |   class    |   y   |   y   | _The SignIn will allow users to sign in._                                           |
+|    SignUp    |   class    |   y   |   y   | _The SignUp will allow users to sign up._                                           |
+|     App      |   class    |   y   |   n   | _The App will be the brain of the app and pass props down._                         |
 
 [🔝](#ShowPets)
 
@@ -145,15 +163,26 @@ src
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+| Task                  | Priority | Estimated Time | Time Invested | Actual Time |
+| --------------------- | :------: | :------------: | :-----------: | :---------: |
+| Back-End Data         |    H     |     3 hrs      |      hrs      |     hrs     |
+| Back-End Routes       |    H     |     3 hrs      |      hrs      |     hrs     |
+| Back-End CRUD         |    H     |     3 hrs      |      hrs      |     hrs     |
+| Header                |    M     |      1 hr      |      hrs      |     hrs     |
+| Sign-In page          |    M     |      1 hr      |      hrs      |     hrs     |
+| Sign-In functionality |    H     |     2 hrs      |      hrs      |     hrs     |
+| Sign-Up page          |    M     |      1 hr      |      hrs      |     hrs     |
+| Sign-Up functionality |    H     |     2 hrs      |      hrs      |     hrs     |
+| Api-Helper            |    H     |     2 hrs      |      hrs      |     hrs     |
+| Pets                  |    H     |     3 hrs      |      hrs      |     hrs     |
+| Pet                   |    H     |     3 hrs      |      hrs      |     hrs     |
+| Descriptions          |    M     |     3 hrs      |      hrs      |     hrs     |
+| CreatePet             |    H     |     3 hrs      |      hrs      |     hrs     |
+| UpdatePet             |    H     |     3 hrs      |      hrs      |     hrs     |
+| DeletePet             |    H     |     3 hrs      |      hrs      |     hrs     |
+| CSS                   |    H     |     8 hrs      |      hrs      |     hrs     |
+| Unexpected Debugging  |    H     |     3 hrs      |      hrs      |     hrs     |
+| TOTAL                 |          |     47 hrs     |      hrs      |     hrs     |
 
 [🔝](#ShowPets)
 
@@ -163,7 +192,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model.
+> https://app.lucidchart.com/documents/view/ffd14497-4e49-4f98-bc22-59e0122a58a8/0_0 > <img src="Assets/Structures/ShowPets-ERD-Model.png"/>
 
 [🔝](#ShowPets)
 
@@ -172,7 +201,7 @@ src
 ## Post-MVP
 
 - _The ability for users to comment on other pet posts._
-- _The ablitly for users to like a pet post._
+- _The ability for users to like a pet post._
 
 [🔝](#ShowPets)
 
@@ -190,4 +219,4 @@ src
 
 > Use this section to list of all major issues encountered and their resolution, if you'd like.
 
-[🔝](#ShowPets)
+[Up](#ShowPets)
