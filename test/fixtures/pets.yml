@@ -7,7 +7,6 @@ one:
   age: 1
   description: MyString
   user: one
-  category: one
 
 two:
   name: MyString
@@ -16,4 +15,3 @@ two:
   age: 1
   description: MyString
   user: two
-  category: two

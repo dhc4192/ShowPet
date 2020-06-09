@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Category < ApplicationRecord
-  belongs_to :pet
+  has_many :pets, class_name: 'pet', foreign_key: 'pet_id'
 end
