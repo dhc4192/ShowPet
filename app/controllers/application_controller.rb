@@ -13,17 +13,6 @@ class ApplicationController < ActionController::API
     HashWithIndifferentAccess.new decoded
   end
 
-  def create
-    @user = User.ner(user_params)
-
-    if @user.save
-      @token = encode({ user_id: @user.id })
-      render json: { user: @user, token: @token }, status: :created
-    else
-      render json @user.errors, status: :unprocessable_entity
-    end
-  end
-
   def authorize_request
     header = request.headers['Authorization']
     header = header.split(' ').last if header
