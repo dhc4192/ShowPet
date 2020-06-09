@@ -107,24 +107,24 @@ src
       |__ Structures
       |__ Font
 |__ Components/
-      |__ Header
-            |__ Header.css
-            |__ Header.jsx
-      |__ Main
-            |__ Main.css
-            |__ Main.jsx
-      |__ Pets
-            |__ Pets.css
-            |__ Pets.jsx
-      |__ Pet
-            |__ Pet.css
-            |__ Pet.jsx
       |__ Categories
             |__ Categories.css
             |__ Categories.jsx
       |__ CRUD
             |__ CreatePet.jsx
             |__ UpdatePet.jsx
+      |__ Header
+            |__ Header.css
+            |__ Header.jsx
+      |__ Main
+            |__ Main.css
+            |__ Main.jsx
+      |__ Pet
+            |__ Pet.css
+            |__ Pet.jsx
+      |__ Pets
+            |__ Pets.css
+            |__ Pets.jsx
       |__ SignIn
             |__ SignIn.css
             |__ SignIn.jsx
@@ -134,7 +134,7 @@ src
 |__ services/
       |__ api-helper.js
       |__ auth.js
-      |__ descriptions.js
+      |__ categories.js
       |__ pets.js
 |__ App.css
 |__ App.js
