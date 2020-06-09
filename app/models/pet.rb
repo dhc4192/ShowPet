@@ -2,5 +2,5 @@
 
 class Pet < ApplicationRecord
   belongs_to :user
-  belongs_to :category, class_name: 'category', foreign_key: 'category_id'
+  belongs_to :category
 end
