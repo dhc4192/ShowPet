@@ -119,9 +119,9 @@ src
       |__ Pet
             |__ Pet.css
             |__ Pet.jsx
-      |__ Description
-            |__ Descriptions.css
-            |__ Descriptions.jsx
+      |__ Categories
+            |__ Categories.css
+            |__ Categories.jsx
       |__ CRUD
             |__ CreatePet.jsx
             |__ UpdatePet.jsx
@@ -148,18 +148,18 @@ src
 
 #### Component Breakdown
 
-|  Component   |    Type    | state | props | Description                                                                         |
-| :----------: | :--------: | :---: | :---: | :---------------------------------------------------------------------------------- |
-|    Header    | functional |   n   |   y   | _The header will contain the logo, the title, welcome user, and the create button._ |
-|     Main     |   class    |   y   |   y   | _The main will be the source of all states._                                        |
-|     Pets     | functional |   n   |   y   | _The Pets will be render the all pets._                                             |
-|     Pet      | functional |   n   |   y   | _The Pet will render a single specified pet._                                       |
-| Descriptions | functional |   n   |   y   | _The Description will render the information of the specified pet._                 |
-|  CreatePet   |   class    |   y   |   y   | _The CreatePet will be used to add a new pet._                                      |
-|  UpdatePet   |   class    |   y   |   y   | _The UpdatePet will be used to update specified pet._                               |
-|    SignIn    |   class    |   y   |   y   | _The SignIn will allow users to sign in._                                           |
-|    SignUp    |   class    |   y   |   y   | _The SignUp will allow users to sign up._                                           |
-|     App      |   class    |   y   |   n   | _The App will be the brain of the app and pass props down._                         |
+| Component  |    Type    | state | props | Description                                                                         |
+| :--------: | :--------: | :---: | :---: | :---------------------------------------------------------------------------------- |
+|   Header   | functional |   n   |   y   | _The header will contain the logo, the title, welcome user, and the create button._ |
+|    Main    |   class    |   y   |   y   | _The main will be the source of all states._                                        |
+|    Pets    | functional |   n   |   y   | _The Pets will be render the all pets._                                             |
+|    Pet     | functional |   n   |   y   | _The Pet will render a single specified pet._                                       |
+| Categories | functional |   n   |   y   | _The Description will render the information of the specified pet._                 |
+| CreatePet  |   class    |   y   |   y   | _The CreatePet will be used to add a new pet._                                      |
+| UpdatePet  |   class    |   y   |   y   | _The UpdatePet will be used to update specified pet._                               |
+|   SignIn   |   class    |   y   |   y   | _The SignIn will allow users to sign in._                                           |
+|   SignUp   |   class    |   y   |   y   | _The SignUp will allow users to sign up._                                           |
+|    App     |   class    |   y   |   n   | _The App will be the brain of the app and pass props down._                         |
 
 [🔝](#ShowPets)
 
@@ -180,7 +180,7 @@ src
 | Api-Helper            |    H     |     2 hrs      |      hrs      |     hrs     |
 | Pets                  |    H     |     3 hrs      |      hrs      |     hrs     |
 | Pet                   |    H     |     3 hrs      |      hrs      |     hrs     |
-| Descriptions          |    M     |     3 hrs      |      hrs      |     hrs     |
+| Categories            |    M     |     3 hrs      |      hrs      |     hrs     |
 | CreatePet             |    H     |     3 hrs      |      hrs      |     hrs     |
 | UpdatePet             |    H     |     3 hrs      |      hrs      |     hrs     |
 | DeletePet             |    H     |     3 hrs      |      hrs      |     hrs     |
