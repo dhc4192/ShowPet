@@ -1,6 +1,6 @@
 # ShowPets
 
-<img src='Assets/Images/ShowPets-Logo-small.png'></img>
+![](Assets/Images/ShowPets-Logo-small.png)
 
 - [Overview](#overview)
 - [MVP](#mvp)
