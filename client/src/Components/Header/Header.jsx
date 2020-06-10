@@ -15,6 +15,8 @@ export default function Header(props) {
           </Link>
         </>
       ) : null}
+
+      <Link to='/add/pet'><button>Add Pet</button></Link>
     </div>
   );
 }
