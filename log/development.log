@@ -1883,3 +1883,960 @@ FOREIGN KEY ("user_id")
   [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
   [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" ORDER BY "pets"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" ORDER BY "pets"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:30:03 -0400
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:3:in `<main>'
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:30:18 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 259)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:30:23 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:30:48 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:30:50 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:31:05 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:31:13 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:31:17 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:32:10 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:32:13 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:32:21 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:32:25 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:32:28 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:32:31 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:32:33 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 19:32:35 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started POST "/users/signin" for ::1 at 2020-06-09 19:46:41 -0400
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:3:in `<main>'
+Started POST "/user/signin" for ::1 at 2020-06-09 19:46:57 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/user/signin"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/signin" for ::1 at 2020-06-09 19:47:10 -0400
+  
+AbstractController::ActionNotFound (The action 'signin' could not be found for AuthenticationController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/signin" for ::1 at 2020-06-09 19:47:18 -0400
+  
+AbstractController::ActionNotFound (The action 'signin' could not be found for AuthenticationController):
+  
+actionpack (6.0.3.1) lib/abstract_controller/base.rb:131:in `process'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+activerecord (6.0.3.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-06-09 19:48:55 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/users"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/users" for ::1 at 2020-06-09 19:52:10 -0400
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:3:in `<main>'
+Started POST "/users" for ::1 at 2020-06-09 20:01:20 -0400
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"username"=>"dae", "email"=>"dae@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[35m (6.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dae@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+Completed 422 Unprocessable Entity in 225ms (Views: 0.2ms | ActiveRecord: 10.4ms | Allocations: 10511)
+
+
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:01:34 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/signin"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:01:46 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"user"=>{"username"=>"dae", "email"=>"dae@gmail.com", "password"=>"[FILTERED]"}, "authentication"=>{"user"=>{"username"=>"dae", "email"=>"dae@gmail.com", "password"=>"[FILTERED]"}}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.0ms | Allocations: 1495)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: auth):
+  
+app/controllers/authentication_controller.rb:23:in `signin_params'
+app/controllers/authentication_controller.rb:7:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:02:16 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.7ms | Allocations: 1818)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:02:45 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.1ms | Allocations: 3924)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:03:19 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.9ms | Allocations: 1159)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:03:30 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/signin"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:03:49 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/signin"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started POST "/auth/login" for ::1 at 2020-06-09 20:03:58 -0400
+Processing by AuthenticationController#login as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.4ms | Allocations: 3080)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `login'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:04:23 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms | Allocations: 3102)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:07:08 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1138)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:07:09 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.6ms | Allocations: 1155)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:07:10 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1141)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:07:10 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1138)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:07:10 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms | Allocations: 1153)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:07:11 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1143)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:07:11 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1138)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/verify" for ::1 at 2020-06-09 20:07:24 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/auth/verify"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:07:30 -0400
+Processing by AuthenticationController#verify as */*
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.3ms | Allocations: 4882)
+
+
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:08:33 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"username", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"username", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "username"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 1139)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (7668.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "ShowPets_development"[0m
+Started POST "/auth/login" for ::1 at 2020-06-09 20:10:36 -0400
+Processing by AuthenticationController#login as */*
+  Parameters: {"auth"=>{"username"=>"username", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"username", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "username"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `login'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms | Allocations: 3084)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `login'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:11:11 -0400
+Processing by AuthenticationController#signin as */*
+  Parameters: {"auth"=>{"username"=>"username", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"username", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "username"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms | Allocations: 3080)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:13:15 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 200)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:13:21 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:13:28 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:13:36 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:13:42 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:14:07 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:14:10 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:16:19 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:16:25 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:16:42 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:21:27 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 8ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 194)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:21:30 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:23:18 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:23:24 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:23:30 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:23:32 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:23:46 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:23:52 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:23:55 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:23:57 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:24:08 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:24:12 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:24:15 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:25:20 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:25:22 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:25:28 -0400
+Processing by AuthenticationController#signin as HTML
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1138)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:25:43 -0400
+Processing by AuthenticationController#signin as HTML
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1185)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:26:28 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 194)
+
+
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:26:43 -0400
+Processing by AuthenticationController#signin as HTML
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1152)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:29:20 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:29:24 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:29:32 -0400
+Processing by AuthenticationController#signin as HTML
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms | Allocations: 1152)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:32:26 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:32:39 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:32:44 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:39:17 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:40:19 -0400
+Processing by AuthenticationController#signin as HTML
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.5ms | Allocations: 1240)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:43:19 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:43:34 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:43:35 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:43:39 -0400
+Processing by AuthenticationController#signin as HTML
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms | Allocations: 1152)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:43:51 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:45:32 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:45:40 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:45:42 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:48:38 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:48:45 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:49:13 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:49:25 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:49:25 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:50:14 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-09 20:50:19 -0400
+Processing by AuthenticationController#verify as HTML
+Filter chain halted as :authorize_request rendered or redirected
+Completed 401 Unauthorized in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 191)
+
+
+Started POST "/auth/signin" for ::1 at 2020-06-09 20:50:25 -0400
+Processing by AuthenticationController#signin as HTML
+  Parameters: {"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}, "authentication"=>{"auth"=>{"username"=>"dae", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "dae"], ["LIMIT", 1]]
+  ↳ app/controllers/authentication_controller.rb:7:in `signin'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 3.5ms | Allocations: 1152)
+
+
+  
+NoMethodError (undefined method `authenticate' for nil:NilClass):
+  
+app/controllers/authentication_controller.rb:8:in `signin'
+Started POST "/users/" for ::1 at 2020-06-09 20:50:39 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"username"=>"", "email"=>"", "password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:22:in `create'
+Completed 422 Unprocessable Entity in 15ms (Views: 0.1ms | ActiveRecord: 4.2ms | Allocations: 11106)
+
+

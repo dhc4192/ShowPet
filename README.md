@@ -1,6 +1,6 @@
 # ShowPets
 
-![](Assets/Images/ShowPets-Logo-small.png)
+![](client/src/Assets/Images/ShowPets-Logo-small.png)
 
 - [Overview](#overview)
 - [MVP](#mvp)
@@ -73,16 +73,16 @@ _The **ShowPets** will have an authentication and verification process which all
 - Mobile Wireframe
 
   > https://www.figma.com/file/P7UJCmIUag7RGazooprsqn/ShowPets-Wireframe?node-id=0%3A1 >
-  > ![](Assets/Structures/Mobile-Wireframe.png)
+  > ![](client/src/Assets/Structures/Mobile-Wireframe.png)
 
 - Tablet Wireframe
 
   > https://www.figma.com/file/P7UJCmIUag7RGazooprsqn/ShowPets-Wireframe?node-id=3%3A10 >
-  > ![](Assets/Structures/Tablet-Wireframe.png)
+  > ![](client/src/Assets/Structures/Tablet-Wireframe.png)
 
 - Desktop Wireframe
   > https://www.figma.com/file/P7UJCmIUag7RGazooprsqn/ShowPets-Wireframe?node-id=3%3A11 >
-  > ![](Assets/Structures/Desktop-Wireframe.png)
+  > ![](client/src/Assets/Structures/Desktop-Wireframe.png)
 
 [🔝](#ShowPets)
 
@@ -91,7 +91,7 @@ _The **ShowPets** will have an authentication and verification process which all
 #### Component Tree
 
 > https://app.lucidchart.com/documents/view/bb89b87d-bcda-41cf-b85e-25081a7c223d/0_0 >
-> ![](Assets/Structures/ShowPets-Component-Tree.png)
+> ![](client/src/Assets/Structures/ShowPets-Component-Tree.png)
 
 [🔝](#ShowPets)
 
@@ -197,7 +197,7 @@ src
 #### ERD Model
 
 > https://app.lucidchart.com/documents/view/ffd14497-4e49-4f98-bc22-59e0122a58a8/0_0 >
-> ![](Assets/Structures/ShowPets-ERD-Model.png)
+> ![](client/src/Assets/Structures/ShowPets-ERD-Model.png)
 
 [🔝](#ShowPets)
 

@@ -1,14 +1,14 @@
 import api from "./api-helper";
 
-export const loginUser = async (loginData) => {
-  const resp = await api.post("/auth/login", { auth: loginData });
+export const signInUser = async (signInData) => {
+  const resp = await api.post("/auth/signin", { auth: signInData });
   localStorage.setItem("authToken", resp.data.token);
   api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
   return resp.data.user;
 };
 
-export const registerUser = async (registerData) => {
-  const resp = await api.post("/users/", { user: registerData });
+export const signUpUser = async (signUpData) => {
+  const resp = await api.post("/users/", { user: signUpData });
   localStorage.setItem("authToken", resp.data.token);
   api.defaults.headers.common.authorization = `Bearer ${resp.data.token}`;
   return resp.data.user;
