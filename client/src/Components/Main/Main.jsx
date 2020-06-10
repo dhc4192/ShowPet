@@ -1,6 +1,11 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import { getAllPets, createPet, deletePet } from "../../services/pets";
+import {
+  getAllPets,
+  createPet,
+  deletePet,
+  updatePet,
+} from "../../services/pets";
 import { getCategories } from "../../services/categories";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
@@ -31,6 +36,13 @@ export default class Main extends Component {
     const newPet = await createPet(petData);
     this.setState((prevState) => ({
       pets: [...prevState.pets, newPet],
+    }));
+  };
+
+  putPet = async (id, petData) => {
+    const updatedPet = await updatePet(id, petData);
+    this.setState((prevState) => ({
+      pets: prevState.pets.map((pet) => (pet.id === id ? updatedPet : pet)),
     }));
   };
 
@@ -73,6 +85,7 @@ export default class Main extends Component {
           render={(props) => <Pets {...props} pets={this.state.pets} />}
         />
         <Route
+          exact
           path="/pets/:id"
           render={(props) => (
             <Pet
@@ -82,7 +95,6 @@ export default class Main extends Component {
             />
           )}
         />
-
         <Route
           path="/add/pet"
           render={(props) => (
@@ -93,15 +105,10 @@ export default class Main extends Component {
             />
           )}
         />
-
         <Route
           path="/pets/:id/edit"
           render={(props) => {
-            const petId = props.match.params.id;
-            const pet = this.state.pets.find(
-              (pet) => pet.id === parseInt(petId)
-            );
-            return <UpdatePet {...props} pet={pet} putPet={this.putPet} />;
+            return <UpdatePet {...props} putPet={this.putPet} />;
           }}
         />
       </main>

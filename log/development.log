@@ -21270,3 +21270,1428 @@ Processing by PetsController#show as HTML
 Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1882)
 
 
+Started GET "/pets/26" for ::1 at 2020-06-10 19:08:48 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:08:48 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:08:48 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.6ms | Allocations: 1883)
+
+
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.5ms | Allocations: 1446)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 3.0ms | Allocations: 969)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:08:48 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 1435)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:08:50 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:08:50 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:08:50 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 881)
+
+
+  [1m[36mPet Load (4.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Completed 200 OK in 7ms (Views: 1.9ms | ActiveRecord: 4.5ms | Allocations: 3488)
+
+
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 11ms (Views: 2.9ms | ActiveRecord: 0.6ms | Allocations: 5626)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:08:50 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/2" for ::1 at 2020-06-10 19:08:56 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 1884)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:09:01 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.7ms | Allocations: 1882)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:09:21 -0400
+Started GET "/pets/26" for ::1 at 2020-06-10 19:09:21 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:09:21 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (2.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mPet Load (4.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 4.1ms | Allocations: 3538)
+
+
+  [1m[36mUser Load (5.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 8ms (Views: 0.8ms | ActiveRecord: 5.4ms | Allocations: 4231)
+
+
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 3.5ms | Allocations: 3929)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:09:21 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.7ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:09:26 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:09:26 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:09:26 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mPet Load (3.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 3.0ms | Allocations: 2161)
+
+
+  [1m[36mCategory Load (4.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 5.2ms | Allocations: 3725)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.5ms | Allocations: 913)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:09:26 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:09:27 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:09:27 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:09:27 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (8.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mPet Load (8.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 11ms (Views: 3.0ms | ActiveRecord: 8.0ms | Allocations: 3291)
+
+
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 2991)
+
+
+  [1m[36mCategory Load (2.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 15ms (Views: 2.2ms | ActiveRecord: 10.8ms | Allocations: 5327)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:09:27 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:09:32 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:09:32 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:09:32 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 5.8ms | Allocations: 883)
+
+
+  [1m[36mPet Load (7.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  [1m[36mPet Load (9.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 200 OK in 10ms (Views: 2.2ms | ActiveRecord: 7.3ms | Allocations: 2752)
+
+
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 14ms (Views: 1.6ms | ActiveRecord: 9.8ms | Allocations: 5614)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:09:32 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:09:44 -0400
+Started GET "/pets/26" for ::1 at 2020-06-10 19:09:44 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:09:44 -0400
+Processing by PetsController#index as HTML
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (1.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 2720)
+
+
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 1.3ms | Allocations: 1926)
+
+
+  [1m[36mCategory Load (5.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 14ms (Views: 1.7ms | ActiveRecord: 5.8ms | Allocations: 4540)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:09:44 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:09:57 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:09:57 -0400
+Started GET "/pets/26" for ::1 at 2020-06-10 19:09:57 -0400
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mUser Load (11.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Processing by PetsController#index as HTML
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 1.1ms | Allocations: 2952)
+
+
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 11.4ms | Allocations: 4849)
+
+
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.6ms | Allocations: 2194)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:09:57 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.8ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:10:07 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:10:07 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:10:07 -0400
+Processing by PetsController#show as HTML
+Processing by PetsController#index as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (1.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 1.8ms | Allocations: 2119)
+
+
+  [1m[36mPet Load (2.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 2913)
+
+
+  [1m[36mCategory Load (3.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 11ms (Views: 1.4ms | ActiveRecord: 5.6ms | Allocations: 4569)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:10:07 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:10:13 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:10:13 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:10:13 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (3.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (2.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 6.5ms | Allocations: 2887)
+
+
+Completed 200 OK in 9ms (Views: 2.0ms | ActiveRecord: 6.2ms | Allocations: 3132)
+
+
+  [1m[36mPet Load (6.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 24ms (Views: 17.4ms | ActiveRecord: 6.7ms | Allocations: 4425)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:10:13 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:10:41 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Started GET "/pets" for ::1 at 2020-06-10 19:10:41 -0400
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:10:41 -0400
+Processing by PetsController#index as HTML
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.9ms | Allocations: 3035)
+
+
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 1.2ms | Allocations: 1957)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 881)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:10:41 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:11:17 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:11:17 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:11:17 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (7.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 7.6ms | Allocations: 885)
+
+
+  [1m[36mPet Load (12.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mPet Load (9.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 12ms (Views: 2.0ms | ActiveRecord: 9.8ms | Allocations: 3135)
+
+
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 20ms (Views: 1.5ms | ActiveRecord: 13.1ms | Allocations: 5614)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:11:18 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 1.6ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:11:23 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:11:23 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:11:23 -0400
+Processing by PetsController#index as HTML
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (3.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (6.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+  [1m[36mPet Load (14.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 17ms (Views: 2.5ms | ActiveRecord: 14.0ms | Allocations: 4293)
+
+
+Completed 200 OK in 12ms (Views: 2.1ms | ActiveRecord: 9.3ms | Allocations: 1905)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 2.0ms | Allocations: 1242)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:11:23 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1433)
+
+
+Started GET "/pets/2" for ::1 at 2020-06-10 19:11:37 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.5ms | Allocations: 1884)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:11:40 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:11:49 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Started GET "/pets" for ::1 at 2020-06-10 19:11:49 -0400
+  [1m[36mCategory Load (1.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 4ms (Views: 1.5ms | ActiveRecord: 1.6ms | Allocations: 2250)
+
+
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.8ms | Allocations: 1373)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:11:49 -0400
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 881)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:11:49 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:11:51 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:11:51 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:11:51 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (1.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mPet Load (2.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  [1m[36mCategory Load (1.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+Completed 200 OK in 5ms (Views: 2.4ms | ActiveRecord: 2.7ms | Allocations: 3595)
+
+
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 2322)
+
+
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 7ms (Views: 3.1ms | ActiveRecord: 3.4ms | Allocations: 5142)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:11:51 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 1.5ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:11:56 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 1882)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:12:07 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:12:07 -0400
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 1578)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 2395)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:12:07 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:12:12 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:12:12 -0400
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1538)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.3ms | Allocations: 2395)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:12:12 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:12:15 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:12:21 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:12:21 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:12:21 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1520)
+
+
+  [1m[36mPet Load (1.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms | Allocations: 2820)
+
+
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 2.0ms | Allocations: 5133)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:12:21 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:12:25 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:12:25 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Processing by PetsController#index as HTML
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:12:25 -0400
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.7ms | Allocations: 1710)
+
+
+Completed 200 OK in 5ms (Views: 2.6ms | ActiveRecord: 1.2ms | Allocations: 4112)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms | Allocations: 881)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:12:25 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:12:27 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:12:27 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:12:27 -0400
+Processing by PetsController#index as HTML
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 881)
+
+
+  [1m[36mPet Load (15.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mPet Load (14.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 29ms (Views: 13.1ms | ActiveRecord: 15.4ms | Allocations: 4061)
+
+
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (1.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 31ms (Views: 1.6ms | ActiveRecord: 15.7ms | Allocations: 5023)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:12:27 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:12:28 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:12:28 -0400
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1543)
+
+
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.7ms | Allocations: 2482)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:12:28 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:12:29 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 5ms (Views: 1.7ms | ActiveRecord: 1.9ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:12:32 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1882)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:12:35 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:12:35 -0400
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.5ms | Allocations: 1003)
+
+
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.2ms | Allocations: 2352)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:12:35 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:12:38 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1882)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:26:34 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:26:34 -0400
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 1685)
+
+
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.4ms | Allocations: 2494)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:26:35 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 1433)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:26:36 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:26:36 -0400
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (1.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.3ms | Allocations: 1421)
+
+
+  [1m[36mUser Load (4.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 9ms (Views: 0.2ms | ActiveRecord: 5.0ms | Allocations: 2566)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:26:36 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:26:52 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:26:52 -0400
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1373)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 1.0ms | Allocations: 881)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:26:52 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.8ms | Allocations: 1433)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:27:17 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:27:17 -0400
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.6ms | Allocations: 2009)
+
+
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.6ms | Allocations: 2375)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:27:17 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (1.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 1.9ms | Allocations: 1433)
+
+
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:36:10 -0400
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:10 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:36:10 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Processing by PetsController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 7ms (Views: 2.7ms | ActiveRecord: 2.4ms | Allocations: 5345)
+
+
+  [1m[36mPet Load (1.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+Processing by AuthenticationController#verify as HTML
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 1.5ms | Allocations: 4614)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 1871)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:36:10 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.6ms | Allocations: 1435)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:13 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:36:13 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:36:13 -0400
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (1.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.3ms | Allocations: 2788)
+
+
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 4.1ms | ActiveRecord: 1.7ms | Allocations: 5037)
+
+
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 3678)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:36:13 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.5ms | Allocations: 1435)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:30 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.5ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:32 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.0ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:33 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:38 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 1882)
+
+
+Started GET "/pets/19" for ::1 at 2020-06-10 19:36:40 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Completed 404 Not Found in 13ms (ActiveRecord: 0.4ms | Allocations: 668)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pet with 'id'=19):
+  
+app/controllers/pets_controller.rb:58:in `set_pet'
+Started GET "/pets" for ::1 at 2020-06-10 19:36:42 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:36:42 -0400
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (4.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 4.8ms | Allocations: 1372)
+
+
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 881)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:36:42 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:44 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:45 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 0.5ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:47 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:36:50 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.7ms | Allocations: 1882)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:38:24 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:38:24 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:38:24 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Processing by AuthenticationController#verify as HTML
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mPet Load (4.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  [1m[36mCategory Load (3.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 7ms (Views: 2.1ms | ActiveRecord: 4.4ms | Allocations: 3094)
+
+
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+Completed 200 OK in 9ms (Views: 2.6ms | ActiveRecord: 4.4ms | Allocations: 4473)
+
+
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 4.1ms | Allocations: 3963)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:38:24 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.5ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:38:48 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:38:48 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:38:48 -0400
+Processing by PetsController#show as HTML
+Processing by PetsController#index as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms | Allocations: 1861)
+
+
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 3157)
+
+
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 7ms (Views: 3.7ms | ActiveRecord: 0.8ms | Allocations: 4551)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:38:48 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:38:52 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:38:52 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:38:52 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (1.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.9ms | Allocations: 1821)
+
+
+  [1m[36mPet Load (2.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 2.5ms | Allocations: 3129)
+
+
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 7ms (Views: 4.1ms | ActiveRecord: 2.0ms | Allocations: 5614)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:38:52 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:39:22 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:39:22 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:39:22 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+Processing by AuthenticationController#verify as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 881)
+
+
+  [1m[36mPet Load (4.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mPet Load (5.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 5.4ms | Allocations: 3776)
+
+
+  [1m[36mCategory Load (1.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 9ms (Views: 1.6ms | ActiveRecord: 6.3ms | Allocations: 5605)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:39:22 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.7ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:39:30 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:39:30 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:39:30 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Processing by AuthenticationController#verify as HTML
+  [1m[36mCategory Load (0.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+  [1m[36mPet Load (2.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+Completed 200 OK in 5ms (Views: 1.9ms | ActiveRecord: 1.3ms | Allocations: 3608)
+
+
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 2775)
+
+
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 2.0ms | Allocations: 4809)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:39:30 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:39:33 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:39:33 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:39:33 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (1.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 2112)
+
+
+  [1m[36mCategory Load (1.7ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 18ms (Views: 11.2ms | ActiveRecord: 3.0ms | Allocations: 4638)
+
+
+  [1m[36mUser Load (14.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 14.3ms | Allocations: 4550)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:39:33 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:39:41 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:39:41 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:39:41 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (3.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 5ms (Views: 1.5ms | ActiveRecord: 3.4ms | Allocations: 1373)
+
+
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 6.3ms | Allocations: 2971)
+
+
+  [1m[36mPet Load (6.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 11ms (Views: 1.5ms | ActiveRecord: 6.9ms | Allocations: 5134)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:39:41 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.8ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.8ms | Allocations: 1433)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:41:51 -0400
+Started GET "/pets/26" for ::1 at 2020-06-10 19:41:51 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:41:51 -0400
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by PetsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 1.7ms | Allocations: 1572)
+
+
+  [1m[36mPet Load (5.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mPet Load (5.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 7ms (Views: 1.3ms | ActiveRecord: 5.7ms | Allocations: 3131)
+
+
+  [1m[36mCategory Load (2.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 7.5ms | Allocations: 4692)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:41:51 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:42:38 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:42:38 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:42:38 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Processing by PetsController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.7ms | Allocations: 2549)
+
+
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 1.8ms | Allocations: 4280)
+
+
+Completed 200 OK in 6ms (Views: 3.5ms | ActiveRecord: 1.5ms | Allocations: 4884)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:42:38 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.9ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.9ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:42:45 -0400
+Started GET "/pets" for ::1 at 2020-06-10 19:42:45 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:42:45 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+Processing by AuthenticationController#verify as HTML
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (2.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.9ms | Allocations: 1670)
+
+
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 7ms (Views: 1.4ms | ActiveRecord: 2.9ms | Allocations: 3529)
+
+
+  [1m[36mPet Load (1.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 1.6ms | Allocations: 4379)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:42:45 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 1ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started PUT "/pets/[object%20Object]" for ::1 at 2020-06-10 19:42:50 -0400
+Processing by PetsController#update as HTML
+  Parameters: {"id"=>"[object Object]", "pet"=>{}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms | Allocations: 1348)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pet with 'id'=[object Object]):
+  
+app/controllers/pets_controller.rb:58:in `set_pet'
+Started GET "/pets/26" for ::1 at 2020-06-10 19:42:53 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.1ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1881)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:42:56 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1882)
+
+
+Started PUT "/pets/[object%20Object]" for ::1 at 2020-06-10 19:43:02 -0400
+Processing by PetsController#update as HTML
+  Parameters: {"id"=>"[object Object]", "pet"=>{}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.4ms | Allocations: 1348)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pet with 'id'=[object Object]):
+  
+app/controllers/pets_controller.rb:58:in `set_pet'
+Started GET "/pets" for ::1 at 2020-06-10 19:43:41 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:43:41 -0400
+Processing by PetsController#index as HTML
+  [1m[36mPet Load (8.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Processing by AuthenticationController#verify as HTML
+Completed 200 OK in 11ms (Views: 2.2ms | ActiveRecord: 8.1ms | Allocations: 2017)
+
+
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 1.0ms | Allocations: 1717)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:43:41 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms | Allocations: 1433)
+
+
+Started GET "/pets/26" for ::1 at 2020-06-10 19:43:45 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1882)
+
+
+Started GET "/pets" for ::1 at 2020-06-10 19:51:13 -0400
+Started GET "/pets/26" for ::1 at 2020-06-10 19:51:13 -0400
+Started GET "/auth/verify" for ::1 at 2020-06-10 19:51:13 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", 26], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Processing by AuthenticationController#verify as HTML
+  [1m[36mCategory Load (2.0ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:16:in `show'
+Completed 200 OK in 6ms (Views: 1.9ms | ActiveRecord: 2.8ms | Allocations: 4267)
+
+
+Processing by PetsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 4.1ms | Allocations: 4489)
+
+
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  ↳ app/controllers/pets_controller.rb:11:in `index'
+Completed 200 OK in 3ms (Views: 1.2ms | ActiveRecord: 1.2ms | Allocations: 2440)
+
+
+Started GET "/categories" for ::1 at 2020-06-10 19:51:13 -0400
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  ↳ app/controllers/categories_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.5ms | Allocations: 1433)
+
+
+Started PUT "/pets/[object%20Object]" for ::1 at 2020-06-10 19:51:18 -0400
+Processing by PetsController#update as HTML
+  Parameters: {"id"=>"[object Object]", "pet"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:21:in `authorize_request'
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets" WHERE "pets"."id" = $1 LIMIT $2[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/pets_controller.rb:58:in `set_pet'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.8ms | Allocations: 1383)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Pet with 'id'=[object Object]):
+  
+app/controllers/pets_controller.rb:58:in `set_pet'

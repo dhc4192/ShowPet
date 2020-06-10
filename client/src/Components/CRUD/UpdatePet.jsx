@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { getOnePet } from "../../services/pets";
 
 export default class CreatePet extends Component {
   state = {
@@ -9,7 +10,23 @@ export default class CreatePet extends Component {
       image: "",
       description: "",
     },
-    categoryId: "",
+  };
+
+  async componentDidMount() {
+    let { id } = this.props.match.params;
+    const pet = await getOnePet(id);
+    this.setState({ pet });
+  }
+
+  componentDidUpdate(prevProps) {
+    if (prevProps.pet !== this.props.pet) {
+      this.setPetForm();
+    }
+  }
+
+  setPetForm = () => {
+    const { name } = this.props.pet;
+    this.setState({ name });
   };
 
   handleChange = (e) => {
@@ -24,14 +41,13 @@ export default class CreatePet extends Component {
 
   render() {
     const { pet } = this.state;
-    const { categories } = this.props;
-    const { addPet, history } = this.props;
+    const { putPet, history } = this.props;
     return (
       <>
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            addPet(this.state.pet);
+            putPet(this.state.pet);
             history.push("/home");
             this.setState({
               pet: {
@@ -40,16 +56,6 @@ export default class CreatePet extends Component {
             });
           }}
         >
-          <div>
-            <select onChange={this.handleChange}>
-              <option>Category</option>
-              {categories.map((category) => (
-                <option key={category.name} value={category.name}>
-                  {category.name}
-                </option>
-              ))}
-            </select>
-          </div>
           <label htmlFor="name">
             <input
               id="name"
