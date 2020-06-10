@@ -1,5 +1,6 @@
 import React from "react";
 import ShowPetsLogo from "../../Assets/Images/ShowPets-Logo-small.png";
+import { Link } from "react-router-dom";
 
 export default function Header(props) {
   return (
@@ -9,9 +10,12 @@ export default function Header(props) {
       {props.currentUser ? (
         <>
           {props.currentUser.username}
-          <button onClick={props.handleSignOut}>Sign Out</button>
+          <Link to="/">
+            <button onClick={props.handleSignOut}>Sign Out</button>
+          </Link>
         </>
       ) : null}
+      <h1>hi</h1>
     </div>
   );
 }

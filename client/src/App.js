@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
+import { Route, Redirect } from 'react-router-dom'
 import {
   signInUser,
   signUpUser,
@@ -30,11 +31,12 @@ export default class App extends Component {
 
   handleSignOut = () => {
     this.setState({
-      currentUser: null,
+      currentUser: null
     });
     localStorage.clear();
     removeToken();
   };
+  
 
   handleVerify = async () => {
     const currentUser = await verifyUser();
@@ -44,14 +46,15 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+        <Route path="/home">
         <Header
           currentUser={this.state.currentUser}
           handleSignOut={this.handleSignOut}
-        />
+        /></Route>
         <Main
-          currentUser={this.state.currentUser}
           handleSignInSubmit={this.handleSignInSubmit}
           handleSignUpSubmit={this.handleSignUpSubmit}
+          currentUser={this.state.currentUser}
         />
       </div>
     );
