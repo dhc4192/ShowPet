@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import { getAllPets, createPet } from "../../services/pets";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
-import CreatePet from "../CRUD/CreatePet";
+import CreatePet from '../CRUD/CreatePet'
 import Pets from "../Pets/Pets";
 import Pet from "../Pet/Pet";
 
@@ -52,7 +52,7 @@ export default class Main extends Component {
           render={(props) => <Pets {...props} pets={this.state.pets} />}
         />
         <Route
-          path="/pets/:id"
+          path="/pet/:id"
           render={(props) => (
             <Pet {...props} currentUser={this.props.currentUser} />
           )}

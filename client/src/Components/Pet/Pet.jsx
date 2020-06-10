@@ -22,12 +22,20 @@ export default class Pet extends Component {
   render() {
     const { pet } = this.state;
     const { currentUser } = this.props;
-    console.log("Here", pet);
+    console.log(pet);
 
     return (
       <>
         <Header currentUser={currentUser} />
-        <div>{pet && <p>{pet.name}</p>}</div>
+        <img src={pet.image} alt={pet.breed} />
+        <button>Edit</button>
+        <button>Delete</button>
+        <div>
+          <p>{pet.name}</p>
+          <p>{pet.breed}</p>
+          <p>{pet.age}</p>
+          <p>{pet.description}</p>
+        </div>
       </>
     );
   }
