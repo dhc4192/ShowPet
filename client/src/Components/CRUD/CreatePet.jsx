@@ -22,15 +22,6 @@ export default class CreatePet extends Component {
     });
   };
 
-  handleSubmit = async (e) => {
-    e.preventDefault();
-    this.setState({
-      pet: {
-        ...this.state.pet,
-      },
-    });
-  };
-
   render() {
     const { pet } = this.state;
     const { categories } = this.props;
@@ -38,9 +29,15 @@ export default class CreatePet extends Component {
     return (
       <>
         <form
-          onSubmit={() => {
+          onSubmit={(e) => {
+            e.preventDefault();
             addPet(this.state.pet);
             history.push("/home");
+            this.setState({
+              pet: {
+                ...this.state.pet,
+              },
+            });
           }}
         >
           <div>

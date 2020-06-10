@@ -22,7 +22,7 @@ export default class Pet extends Component {
 
   render() {
     const { pet } = this.state;
-    const { currentUser, destroyPet } = this.props;
+    const { currentUser, destroyPet, history } = this.props;
     console.log(pet);
 
     return (
@@ -31,7 +31,9 @@ export default class Pet extends Component {
         <img src={pet.image} alt={pet.breed} />
         {currentUser && currentUser.id === pet.user_id && (
           <>
-            <button>Edit</button>
+            <Link to={`/pets/${pet.id}/edit}`}>
+              <button>Edit</button>
+              </Link>
             <Link to="/home">
               <button onClick={() => destroyPet(pet.id)}>Delete</button>
             </Link>

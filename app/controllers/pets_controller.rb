@@ -20,7 +20,7 @@ class PetsController < ApplicationController
   def create
     @pet = Pet.new(pet_params)
     @pet.user = @current_user
-    @pet.category = Category.find(params[:category_id])
+    @pet.category = Category.find(7)
 
     if @pet.save
       render json: @pet, status: :created
@@ -48,7 +48,7 @@ class PetsController < ApplicationController
     @pet = Pet.find(params[:id])
 
     @pet.categories << @pet
-    render json: @pet, include: :categories
+    render json: @pet, include: :category
   end
 
   private

@@ -8,6 +8,7 @@ import CreatePet from "../CRUD/CreatePet";
 import Pets from "../Pets/Pets";
 import Pet from "../Pet/Pet";
 import Categories from "../Categories/Categories";
+import UpdatePet from "../CRUD/UpdatePet";
 
 export default class Main extends Component {
   state = {
@@ -91,6 +92,17 @@ export default class Main extends Component {
               categories={this.state.categories}
             />
           )}
+        />
+
+        <Route
+          path="/pets/:id/edit"
+          render={(props) => {
+            const petId = props.match.params.id;
+            const pet = this.state.pets.find(
+              (pet) => pet.id === parseInt(petId)
+            );
+            return <UpdatePet {...props} pet={pet} putPet={this.putPet} />;
+          }}
         />
       </main>
     );
