@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
 import { getOnePet } from "../../services/pets";
+import { Link } from "react-router-dom";
 
 export default class Pet extends Component {
   state = {
@@ -21,15 +22,22 @@ export default class Pet extends Component {
 
   render() {
     const { pet } = this.state;
-    const { currentUser } = this.props;
+    const { currentUser, destroyPet } = this.props;
     console.log(pet);
 
     return (
       <>
         <Header currentUser={currentUser} />
         <img src={pet.image} alt={pet.breed} />
-        <button>Edit</button>
-        <button>Delete</button>
+        {currentUser && currentUser.id === pet.user_id && (
+          <>
+            <button>Edit</button>
+            <Link to="/home">
+              <button onClick={() => destroyPet(pet.id)}>Delete</button>
+            </Link>
+          </>
+        )}
+
         <div>
           <p>{pet.name}</p>
           <p>{pet.breed}</p>

@@ -1,26 +1,42 @@
 import React, { Component } from "react";
 import { Route } from "react-router-dom";
-import { getAllPets, createPet } from "../../services/pets";
+import { getAllPets, createPet, deletePet } from "../../services/pets";
+import { getCategories } from "../../services/categories";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
-import CreatePet from '../CRUD/CreatePet'
+import CreatePet from "../CRUD/CreatePet";
 import Pets from "../Pets/Pets";
 import Pet from "../Pet/Pet";
+import Categories from "../Categories/Categories";
 
 export default class Main extends Component {
   state = {
     pets: [],
+    categories: [],
   };
 
   async componentDidMount() {
     const pets = await getAllPets();
     this.setState({ pets });
+    this.getAllCategories();
   }
+
+  getAllCategories = async () => {
+    const categories = await getCategories();
+    this.setState({ categories });
+  };
 
   addPet = async (petData) => {
     const newPet = await createPet(petData);
     this.setState((prevState) => ({
       pets: [...prevState.pets, newPet],
+    }));
+  };
+
+  destroyPet = async (id) => {
+    await deletePet(id);
+    this.setState((prevState) => ({
+      pets: prevState.pets.filter((pet) => pet.id !== id),
     }));
   };
 
@@ -47,19 +63,34 @@ export default class Main extends Component {
           )}
         />
         <Route
+          path="/home"
+          render={() => <Categories categories={this.state.categories} />}
+        />
+        <Route
           exact
           path="/home"
           render={(props) => <Pets {...props} pets={this.state.pets} />}
         />
         <Route
-          path="/pet/:id"
+          path="/pets/:id"
           render={(props) => (
-            <Pet {...props} currentUser={this.props.currentUser} />
+            <Pet
+              {...props}
+              currentUser={this.props.currentUser}
+              destroyPet={this.destroyPet}
+            />
           )}
         />
+
         <Route
           path="/add/pet"
-          render={(props) => <CreatePet {...props} addPet={this.addPet} />}
+          render={(props) => (
+            <CreatePet
+              {...props}
+              addPet={this.addPet}
+              categories={this.state.categories}
+            />
+          )}
         />
       </main>
     );

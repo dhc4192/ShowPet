@@ -9,7 +9,7 @@ export default class CreatePet extends Component {
       image: "",
       description: "",
     },
-    created: false,
+    categoryId: "",
   };
 
   handleChange = (e) => {
@@ -33,17 +33,26 @@ export default class CreatePet extends Component {
 
   render() {
     const { pet } = this.state;
+    const { categories } = this.props;
     const { addPet, history } = this.props;
-
     return (
       <>
-        <h3>Add your pet!</h3>
         <form
           onSubmit={() => {
             addPet(this.state.pet);
             history.push("/home");
           }}
         >
+          <div>
+            <select onChange={this.handleChange}>
+              <option>Category</option>
+              {categories.map((category) => (
+                <option key={category.name} value={category.name}>
+                  {category.name}
+                </option>
+              ))}
+            </select>
+          </div>
           <label htmlFor="name">
             <input
               id="name"
