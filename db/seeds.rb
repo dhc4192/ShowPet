@@ -39,4 +39,13 @@ Pet.create!(
   user: @user,
   category: @dog
 )
+Pet.create!(
+  name: 'Kid',
+  image: 'https://i.ibb.co/6N4dKxM/Kid2.jpg',
+  breed: 'Maltese',
+  age: 6,
+  description: 'Playful, happy, loves the outdoors, and loves treats.',
+  user: @user,
+  category: @dog
+)
 p "#{Pet.count} pet(s) created"

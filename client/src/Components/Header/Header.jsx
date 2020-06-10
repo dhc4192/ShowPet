@@ -9,13 +9,12 @@ export default function Header(props) {
       <h1>ShowPets</h1>
       {props.currentUser ? (
         <>
-          {props.currentUser.username}
+          Welcome, {props.currentUser.username}
           <Link to="/">
             <button onClick={props.handleSignOut}>Sign Out</button>
           </Link>
         </>
       ) : null}
-      <h1>hi</h1>
     </div>
   );
 }
