@@ -3,7 +3,7 @@ import { Route } from "react-router-dom";
 import { getAllPets, createPet } from "../../services/pets";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
-import CreatePet from '../CRUD/CreatePet'
+import CreatePet from "../CRUD/CreatePet";
 import Pets from "../Pets/Pets";
 import Pet from "../Pet/Pet";
 

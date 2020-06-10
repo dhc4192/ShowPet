@@ -13,9 +13,7 @@ class PetsController < ApplicationController
 
   # GET /pets/1
   def show
-    @pet = Pet.find(params[:id])
-
-    render json: @pet, include: :categories
+    render json: @pet, include: :category
   end
 
   # POST /pets
@@ -56,7 +54,7 @@ class PetsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_pet
-    @pet = @curernt_user.Pet.find(params[:id])
+    @pet = Pet.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.

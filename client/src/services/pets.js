@@ -6,7 +6,7 @@ export const getAllPets = async () => {
 };
 
 export const getOnePet = async (id) => {
-  const resp = await api.get(`/pet/${id}`);
+  const resp = await api.get(`/pets/${id}`);
   return resp.data;
 };
 

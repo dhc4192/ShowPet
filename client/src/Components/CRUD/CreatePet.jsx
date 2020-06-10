@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { createPet } from "../../services/pets";
 
 export default class CreatePet extends Component {
   state = {
@@ -10,6 +9,7 @@ export default class CreatePet extends Component {
       image: "",
       description: "",
     },
+    created: false,
   };
 
   handleChange = (e) => {
@@ -22,23 +22,26 @@ export default class CreatePet extends Component {
     });
   };
 
+  handleSubmit = async (e) => {
+    e.preventDefault();
+    this.setState({
+      pet: {
+        ...this.state.pet,
+      },
+    });
+  };
+
   render() {
-    const { name, breed, age, image, description } = this.state;
+    const { pet } = this.state;
     const { addPet, history } = this.props;
+
     return (
       <>
         <h3>Add your pet!</h3>
-
         <form
-          onSubmit={(e) => {
-            e.preventDefault();
+          onSubmit={() => {
             addPet(this.state);
             history.push("/home");
-            this.setState({
-              pet: {
-                ...this.state.pet,
-              },
-            });
           }}
         >
           <label htmlFor="name">
@@ -46,7 +49,7 @@ export default class CreatePet extends Component {
               id="name"
               type="text"
               name="name"
-              value={name}
+              value={pet.name}
               placeholder="Name"
               onChange={this.handleChange}
             />
@@ -56,7 +59,7 @@ export default class CreatePet extends Component {
               id="breed"
               type="text"
               name="breed"
-              value={breed}
+              value={pet.breed}
               placeholder="Breed"
               onChange={this.handleChange}
             />
@@ -65,7 +68,8 @@ export default class CreatePet extends Component {
             <input
               id="age"
               type="text"
-              value={age}
+              name="age"
+              value={pet.age}
               placeholder="Age"
               onChange={this.handleChange}
             />
@@ -74,7 +78,8 @@ export default class CreatePet extends Component {
             <input
               id="image"
               type="text"
-              value={image}
+              name="image"
+              value={pet.image}
               placeholder="Image"
               onChange={this.handleChange}
             />
@@ -83,7 +88,8 @@ export default class CreatePet extends Component {
             <textarea
               id="description"
               rows={8}
-              value={description}
+              name="description"
+              value={pet.description}
               placeholder="Description"
               onChange={this.handleChange}
             />
