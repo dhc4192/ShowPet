@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ShowPetsLogo from "../../Assets/Images/ShowPets-Logo-small.png";
 
-
 export default class SignIn extends Component {
   state = {
     username: "",

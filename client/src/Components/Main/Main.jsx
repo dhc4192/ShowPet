@@ -8,7 +8,8 @@ export default class Main extends Component {
     return (
       <main>
         <Route
-          exact path="/"
+          exact
+          path="/"
           render={(props) => (
             <SignIn
               {...props}

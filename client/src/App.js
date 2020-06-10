@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-import "./App.css";
-import Header from "./Components/Header/Header";
-import Main from "./Components/Main/Main";
-import { Route, Redirect } from 'react-router-dom'
+import { Route } from "react-router-dom";
 import {
   signInUser,
   signUpUser,
   removeToken,
   verifyUser,
 } from "./services/auth";
+import Header from "./Components/Header/Header";
+import Main from "./Components/Main/Main";
+import "./App.css";
 
 export default class App extends Component {
   state = {
@@ -31,12 +31,11 @@ export default class App extends Component {
 
   handleSignOut = () => {
     this.setState({
-      currentUser: null
+      currentUser: null,
     });
     localStorage.clear();
     removeToken();
   };
-  
 
   handleVerify = async () => {
     const currentUser = await verifyUser();
@@ -47,10 +46,11 @@ export default class App extends Component {
     return (
       <div className="App">
         <Route path="/home">
-        <Header
-          currentUser={this.state.currentUser}
-          handleSignOut={this.handleSignOut}
-        /></Route>
+          <Header
+            currentUser={this.state.currentUser}
+            handleSignOut={this.handleSignOut}
+          />
+        </Route>
         <Main
           handleSignInSubmit={this.handleSignInSubmit}
           handleSignUpSubmit={this.handleSignUpSubmit}

@@ -1,6 +1,6 @@
 import React from "react";
-import ShowPetsLogo from "../../Assets/Images/ShowPets-Logo-small.png";
 import { Link } from "react-router-dom";
+import ShowPetsLogo from "../../Assets/Images/ShowPets-Logo-small.png";
 
 export default function Header(props) {
   return (
