@@ -40,7 +40,7 @@ export default class CreatePet extends Component {
         <h3>Add your pet!</h3>
         <form
           onSubmit={() => {
-            addPet(this.state);
+            addPet(this.state.pet);
             history.push("/home");
           }}
         >
