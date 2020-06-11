@@ -19,7 +19,7 @@ export default class Main extends Component {
   state = {
     pets: [],
     categories: [],
-    selectedCategory: ''
+    selectedCategory: "",
   };
 
   handleCategoryChange = (e) => {
