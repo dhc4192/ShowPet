@@ -2,25 +2,26 @@
 
 class PetsController < ApplicationController
   before_action :authorize_request, only: %i[create update destroy]
-  before_action :set_pet, only: %i[show update destroy]
+  before_action :set_pet, only: %i[update destroy]
 
   # GET /pets
   def index
     @pets = Pet.all
-
     render json: @pets
   end
 
   # GET /pets/1
   def show
+    @pet = Pet.find(params[:id])
     render json: @pet, include: :category
   end
 
   # POST /pets
   def create
-    @pet = @current_user.pets.create(pet_params)
+    @category = Category.find(params[:category])
+    @pet = Pet.new(pet_params)
     @pet.user = @current_user
-    @pet.category = Category.find(7)
+    @pet.category = @category
 
     if @pet.save
       render json: @pet, status: :created
@@ -31,7 +32,6 @@ class PetsController < ApplicationController
 
   # PATCH/PUT /pets/1
   def update
-    @pet = current_user.pets.find(params[:id])
     if @pet.update(pet_params)
       render json: @pet
     else
@@ -48,11 +48,12 @@ class PetsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_pet
-    @pet = Pet.find(params[:id])
+    @pet = @current_user.pets.find(params[:id])
   end
 
   # Only allow a trusted parameter "white list" through.
   def pet_params
+    puts params
     params.require(:pet).permit(:name, :image, :breed, :age, :description)
   end
 end

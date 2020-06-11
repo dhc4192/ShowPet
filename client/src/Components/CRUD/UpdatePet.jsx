@@ -49,11 +49,11 @@ export default class CreatePet extends Component {
             e.preventDefault();
             putPet(this.state.pet);
             history.push("/home");
-            this.setState({
-              pet: {
-                ...this.state.pet,
-              },
-            });
+            // this.setState({
+            //   pet: {
+            //     ...this.state.pet,
+            //   },
+            // });
           }}
         >
           <label htmlFor="name">

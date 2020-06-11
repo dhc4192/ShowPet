@@ -34,6 +34,7 @@ export default class Main extends Component {
 
   addPet = async (petData) => {
     const newPet = await createPet(petData);
+    console.log(newPet)
     this.setState((prevState) => ({
       pets: [...prevState.pets, newPet],
     }));
@@ -41,8 +42,9 @@ export default class Main extends Component {
 
   putPet = async (id, petData) => {
     const updatedPet = await updatePet(id, petData);
+    console.log(updatedPet)
     this.setState((prevState) => ({
-      pets: prevState.pets.map((pet) => (pet.id === id ? updatedPet : pet)),
+      pets: prevState.pets.map((pet) => (pet.id === id.id ? updatedPet : pet)),
     }));
   };
 
