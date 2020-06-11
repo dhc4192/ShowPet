@@ -14,7 +14,6 @@ export default class Categories extends Component {
 
   render() {
     const { categories } = this.props;
-    console.log(this.state.option)
     return (
       <div>
         <select onChange={this.handleChange}>

@@ -23,7 +23,7 @@ export default class Pet extends Component {
   render() {
     const { pet } = this.state;
     const { currentUser, destroyPet } = this.props;
-    console.log(pet);
+    console.log(pet.category);
 
     return (
       <>

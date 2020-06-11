@@ -18,7 +18,7 @@ class PetsController < ApplicationController
 
   # POST /pets
   def create
-    @pet = current_user.pet.create(pet_params)
+    @pet = @current_user.pets.create(pet_params)
     @pet.user = @current_user
     @pet.category = Category.find(7)
 
