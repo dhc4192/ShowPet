@@ -8,7 +8,7 @@ export default function Pets(props) {
       {pets.map((pet) => (
         <React.Fragment key={pet.id}>
           <Link to={`/pets/${pet.id}`}>
-            <img src={pet.image} alt={pet.breed}/>
+            <img src={pet.image} alt={pet.breed} />
             <p>{pet.name}</p>
           </Link>
         </React.Fragment>

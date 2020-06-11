@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { getCategories } from "../../services/categories";
 import { Route } from "react-router-dom";
 import {
   getAllPets,
@@ -6,14 +7,13 @@ import {
   deletePet,
   updatePet,
 } from "../../services/pets";
-import { getCategories } from "../../services/categories";
+import Categories from "../Categories/Categories";
+import CreatePet from "../CRUD/CreatePet";
+import UpdatePet from "../CRUD/UpdatePet";
 import SignIn from "../SignIn/SignIn";
 import SignUp from "../SignUp/SignUp";
-import CreatePet from "../CRUD/CreatePet";
 import Pets from "../Pets/Pets";
 import Pet from "../Pet/Pet";
-import Categories from "../Categories/Categories";
-import UpdatePet from "../CRUD/UpdatePet";
 
 export default class Main extends Component {
   state = {
@@ -34,7 +34,7 @@ export default class Main extends Component {
 
   addPet = async (petData) => {
     const newPet = await createPet(petData);
-    console.log(newPet)
+    console.log(newPet);
     this.setState((prevState) => ({
       pets: [...prevState.pets, newPet],
     }));
@@ -42,7 +42,7 @@ export default class Main extends Component {
 
   putPet = async (id, petData) => {
     const updatedPet = await updatePet(id, petData);
-    console.log(updatedPet)
+    console.log(updatedPet);
     this.setState((prevState) => ({
       pets: prevState.pets.map((pet) => (pet.id === id.id ? updatedPet : pet)),
     }));

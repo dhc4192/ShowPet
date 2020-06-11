@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Header from "../Header/Header";
 import { getOnePet } from "../../services/pets";
 import { Link } from "react-router-dom";
+import Header from "../Header/Header";
 
 export default class Pet extends Component {
   state = {
@@ -23,7 +23,6 @@ export default class Pet extends Component {
   render() {
     const { pet } = this.state;
     const { currentUser, destroyPet } = this.props;
-    console.log(pet.category);
 
     return (
       <>

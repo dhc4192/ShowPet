@@ -14,7 +14,6 @@ export default class CreatePet extends Component {
 
   handleChange = (e) => {
     const { name, value } = e.target;
-    console.log(name, value)
     this.setState({
       pet: {
         ...this.state.pet,
@@ -32,7 +31,6 @@ export default class CreatePet extends Component {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            console.log(this.state)
             addPet(this.state);
             history.push("/home");
             this.setState({
@@ -43,12 +41,17 @@ export default class CreatePet extends Component {
           }}
         >
           <div>
-            <select name="category" onChange={(e) => this.setState({
-              category: e.target.value
-            })}>
+            <select
+              name="category"
+              onChange={(e) =>
+                this.setState({
+                  category: e.target.value,
+                })
+              }
+            >
               <option>Category</option>
               {categories.map((category) => (
-                <option  key={category.name} value={parseInt(category.id)}>
+                <option key={category.name} value={parseInt(category.id)}>
                   {category.name}
                 </option>
               ))}

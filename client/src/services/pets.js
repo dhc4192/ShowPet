@@ -11,7 +11,7 @@ export const getOnePet = async (id) => {
 };
 
 export const createPet = async (pet) => {
-  const resp = await api.post("/pets", pet );
+  const resp = await api.post("/pets", pet);
   return resp.data;
 };
 
