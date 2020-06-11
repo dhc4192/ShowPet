@@ -19,6 +19,14 @@ export default class Main extends Component {
   state = {
     pets: [],
     categories: [],
+    selectedCategory: ''
+  };
+
+  handleCategoryChange = (e) => {
+    const { value } = e.target;
+    this.setState({
+      selectedCategory: value,
+    });
   };
 
   async componentDidMount() {
@@ -79,12 +87,25 @@ export default class Main extends Component {
         />
         <Route
           path="/home"
-          render={() => <Categories categories={this.state.categories} />}
+          render={() => (
+            <Categories
+              categories={this.state.categories}
+              pets={this.state.pets}
+              handleCategoryChange={this.handleCategoryChange}
+            />
+          )}
         />
         <Route
           exact
           path="/home"
-          render={(props) => <Pets {...props} pets={this.state.pets} />}
+          render={(props) => (
+            <Pets
+              {...props}
+              pets={this.state.pets}
+              categories={this.state.categories}
+              selectedCategory={this.state.selectedCategory}
+            />
+          )}
         />
         <Route
           exact

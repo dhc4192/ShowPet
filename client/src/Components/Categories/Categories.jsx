@@ -1,25 +1,14 @@
 import React, { Component } from "react";
 
 export default class Categories extends Component {
-  state = {
-    categoryId: "",
-  };
-
-  handleChange = (e) => {
-    const { value } = e.target;
-    this.setState({
-      categoryId: value,
-    });
-  };
-
   render() {
-    const { categories } = this.props;
+    const { handleCategoryChange, categories } = this.props;
     return (
       <div>
-        <select onChange={this.handleChange}>
-          <option>Category</option>
+        <select onChange={handleCategoryChange}>
+          <option value="">Category</option>
           {categories.map((category) => (
-            <option key={category.id} value={category.id}>
+            <option key={category.name} value={category.id}>
               {category.name}
             </option>
           ))}
