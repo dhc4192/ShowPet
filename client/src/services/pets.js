@@ -6,22 +6,22 @@ export const getAllPets = async () => {
 };
 
 export const getOnePet = async (id) => {
-  const resp = await api.get(`/pet/${id}`);
+  const resp = await api.get(`/pets/${id}`);
   return resp.data;
 };
 
-export const createPet = async (petData) => {
-  const resp = await api.post("/pets", { pet: petData });
+export const createPet = async (pet) => {
+  const resp = await api.post("/pets", pet);
   return resp.data;
 };
 
-export const updatePet = async (id, petData) => {
-  const resp = await api.put(`/pet/${id}`, { pet: petData });
+export const updatePet = async (id) => {
+  const resp = await api.put(`/pets/${id.id}`, id);
   return resp.data;
 };
 
 export const deletePet = async (id) => {
-  const resp = await api.delete(`/pet/${id}`);
+  const resp = await api.delete(`/pets/${id}`);
   return resp.data;
 };
 
