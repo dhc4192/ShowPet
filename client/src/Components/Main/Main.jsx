@@ -108,7 +108,13 @@ export default class Main extends Component {
         <Route
           path="/pets/:id/edit"
           render={(props) => {
-            return <UpdatePet {...props} putPet={this.putPet} />;
+            return (
+              <UpdatePet
+                {...props}
+                putPet={this.putPet}
+                categories={this.state.categories}
+              />
+            );
           }}
         />
       </main>

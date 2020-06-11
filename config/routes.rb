@@ -5,6 +5,5 @@ Rails.application.routes.draw do
   resources :pets
   post '/auth/signin', to: 'authentication#signin'
   get '/auth/verify', to: 'authentication#verify'
-  get '/categories/:catgory_id/pets/:id', to: 'pets#pet_to_category'
   resources :users
 end

@@ -18,7 +18,7 @@ class PetsController < ApplicationController
 
   # POST /pets
   def create
-    @pet = Pet.new(pet_params)
+    @pet = current_user.pet.create(pet_params)
     @pet.user = @current_user
     @pet.category = Category.find(7)
 
@@ -31,6 +31,7 @@ class PetsController < ApplicationController
 
   # PATCH/PUT /pets/1
   def update
+    @pet = current_user.pets.find(params[:id])
     if @pet.update(pet_params)
       render json: @pet
     else
@@ -41,14 +42,6 @@ class PetsController < ApplicationController
   # DELETE /pets/1
   def destroy
     @pet.destroy
-  end
-
-  def pet_to_category
-    @category = Category.find(params[:category_id])
-    @pet = Pet.find(params[:id])
-
-    @pet.categories << @pet
-    render json: @pet, include: :category
   end
 
   private
