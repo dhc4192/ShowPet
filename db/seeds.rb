@@ -12,11 +12,18 @@ Pet.destroy_all
 Category.destroy_all
 User.destroy_all
 
-@user = User.create!(
+@user1 = User.create!(
   {
     username: 'Dae',
     email: 'dae@gmail.com',
-    password: '123456'
+    password: '123123'
+  }
+)
+@user2 = User.create!(
+  {
+    username: 'DC',
+    email: 'dc@gmail.com',
+    password: '123123'
   }
 )
 p "#{User.count} user(s) created"
@@ -35,8 +42,8 @@ Pet.create!(
   image: 'https://i.ibb.co/wKBYhXQ/Kid1.jpg',
   breed: 'Maltese',
   age: 6,
-  description: 'Playful, happy, loves the outdoors, and loves treats.',
-  user: @user,
+  description: 'Loves being on the baby swings.',
+  user: @user1,
   category: @dog
 )
 Pet.create!(
@@ -44,8 +51,18 @@ Pet.create!(
   image: 'https://i.ibb.co/6N4dKxM/Kid2.jpg',
   breed: 'Maltese',
   age: 6,
-  description: 'Playful, happy, loves the outdoors, and loves treats.',
-  user: @user,
+  description: 'Rocking that Burberry trench coat.',
+  user: @user1,
   category: @dog
 )
+Pet.create!(
+  name: 'Lam',
+  image: 'https://i.ibb.co/3cTcnM9/Lammy.jpg',
+  breed: 'American Shorthair',
+  age: 3,
+  description: 'Getting her beauty sleep.',
+  user: @user2,
+  category: @cat
+)
+
 p "#{Pet.count} pet(s) created"

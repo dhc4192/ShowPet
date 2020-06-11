@@ -1,0 +1,87 @@
+.sign-in-up-logo {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 55vw;
+  max-width: 350px;
+}
+
+.sign-in-up-title {
+  margin: 0;
+  font-size: min(10vw, 60px);
+  color: #000080;
+}
+
+.sign-in-up-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-in-up-text {
+  display: none;
+}
+
+.sign-in-up-input{
+  display: flex;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-left: 10px;
+  width: 78vw;
+  max-width: 420px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: FredokaOne;
+  border-color: #3a3af7;
+  border-radius: 6px;
+  border-width: 4px;
+}
+
+.sign-in-up-button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-top: 5px;
+  width: 50vw;
+  max-width: 225px;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: FredokaOne;
+  border-color: #3a3af7;
+  border-radius: 6px;
+  border-width: 4px;
+}
+
+.account-question-text{
+  margin-bottom: 0;
+}
+
+.sign-up-link {
+text-decoration: none;
+color: black;
+}
+
+.sign-up-link-button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 30vw;
+  max-width: 150px;
+  height: 35px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: FredokaOne;
+  border-color: #3a3af7;
+  border-radius: 6px;
+  border-width: 4px;
+}
+
+.sign-in-dog-cat-image{
+  display: flex;
+  margin-left: auto;
+  margin-top: 9px;
+  width: 250px;
+}
