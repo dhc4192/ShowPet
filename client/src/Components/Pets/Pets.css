@@ -1,12 +1,25 @@
 .pets-link {
+  text-decoration: none;
+  color: black;
 }
 
-.pets-images{
-width: 50vw;
-max-width: 350px;
-
+.pets-container {
+  margin: 10px auto 10px auto;
+  border: 4px solid #3a3af7;
+  width: 75vw;
+  height: 440px;
+  max-width: 370px;
+  border-radius: 10px;
+  box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.7);
 }
 
-.pets-name{
+.pets-images {
+  padding-top: 10px;
+  width: 70vw;
+  max-width: 330px;
+}
+
+.pets-name {
+  margin-top: 5px;
 
 }

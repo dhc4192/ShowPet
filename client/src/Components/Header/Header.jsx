@@ -8,12 +8,13 @@ export default function Header(props) {
   return (
     <div>
       <div className="header-one">
-        <Link className='header-logo-link' to='/home'>
-        <img
-          className="header-logo"
-          src={ShowPetsLogo}
-          alt="Circular logo in blue with white shadow of a cat and dog facing each other."
-        /></Link>
+        <Link className="header-logo-link" to="/home">
+          <img
+            className="header-logo"
+            src={ShowPetsLogo}
+            alt="Circular logo in blue with white shadow of a cat and dog facing each other."
+          />
+        </Link>
         <p className="header-title">ShowPets</p>
       </div>
       <div className="header-two">

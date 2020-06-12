@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './Pets.css'
+import "./Pets.css";
 
 export default function Pets(props) {
   const { pets, selectedCategory } = props;
@@ -16,9 +16,11 @@ export default function Pets(props) {
         })
         .map((pet) => (
           <React.Fragment key={pet.id}>
-            <Link className='pets-link' to={`/pets/${pet.id}`}>
-              <img className='pets-images' src={pet.image} alt={pet.breed} />
-              <p className='pets-name'>{pet.name}</p>
+            <Link className="pets-link" to={`/pets/${pet.id}`}>
+              <div className='pets-container'>
+                <img className="pets-images" src={pet.image} alt={pet.breed} />
+                <p className="pets-name">{pet.name}</p>
+              </div>
             </Link>
           </React.Fragment>
         ))}

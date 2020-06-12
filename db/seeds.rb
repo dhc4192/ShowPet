@@ -57,7 +57,7 @@ Pet.create!(
 )
 Pet.create!(
   name: 'Lam',
-  image: 'https://i.ibb.co/3cTcnM9/Lammy.jpg',
+  image: 'https://i.ibb.co/2Zj3vyB/Lam.jpg',
   breed: 'American Shorthair',
   age: 3,
   description: 'Getting her beauty sleep.',
