@@ -56,7 +56,7 @@ Pet.create!(
 )
 Pet.create!(
   name: 'Fil-A',
-  image: 'https://ibb.co/gTbXVRT',
+  image: 'https://i.ibb.co/3N58zCN/chicken.jpg',
   breed: 'Chicken',
   age: 3,
   description: 'Getting ready.',
