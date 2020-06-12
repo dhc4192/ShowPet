@@ -37,10 +37,15 @@
   color: white;
 }
 
+.header-sign-out-link {
+  display: flex;
+  margin: 5px 0 0 10px;
+  text-decoration: none;
+  width: 76px;
+}
+
 .header-sign-out-button {
   display: flex;
-  margin: 6px 0 0 10px;
-  text-decoration: none;
   color: white;
   font-size: 15px;
   font-family: FredokaOne;
@@ -93,6 +98,7 @@
 
   .header-two {
     height: 80px;
+    padding-right: 20px;
   }
 
   .header-welcome-user {
@@ -101,10 +107,13 @@
     font-size: 28px;
   }
 
+  .header-sign-out-link {
+    margin: 10px 0 0 10px;
+    width: 90px;
+  }
+  
   .header-sign-out-button {
-    margin: 6px 0 0 10px;
-    font-size: 19px;
-    border: 1px solid white;
+    font-size: 18px;
   }
 
   .header-add-button {

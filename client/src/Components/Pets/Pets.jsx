@@ -5,7 +5,7 @@ import "./Pets.css";
 export default function Pets(props) {
   const { pets, selectedCategory } = props;
   return (
-    <div>
+    <div className='container-for-tablet-desktop'>
       {pets
         .filter((pet) => {
           if (selectedCategory.length === 0) {

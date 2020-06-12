@@ -23,7 +23,7 @@ export default function Header(props) {
             <p className="header-welcome-user">
               Welcome, {props.currentUser.username}
             </p>
-            <Link to="/">
+            <Link className='header-sign-out-link' to="/">
               <button
                 className="header-sign-out-button"
                 onClick={props.handleSignOut}

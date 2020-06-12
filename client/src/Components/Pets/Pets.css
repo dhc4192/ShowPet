@@ -1,20 +1,12 @@
-.main-pets-container {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 .pets-link {
   text-decoration: none;
   color: black;
 }
 
 .pets-container {
-  display: flex;
-  flex-direction: column;
   position: relative;
   margin: 10px auto 10px auto;
   width: 75vw;
-  height: auto;
   max-width: 370px;
   border-radius: 10px;
   border: 4px solid #3a3af7;
@@ -26,7 +18,7 @@
   padding: 10px 0 40px 0;
   width: 70vw;
   max-width: 330px;
-  max-height: 396px;
+  max-height: 350px;
 }
 
 .pets-name {
@@ -44,5 +36,21 @@
 }
 
 @media (min-width: 730px) {
-  
+  .container-for-tablet-desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .main-pets-container {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .pets-container {
+    margin-top: 0;
+  }
+  .pets-images {
+    width: 40vw;
+    height: 42vh;
+  }
 }
