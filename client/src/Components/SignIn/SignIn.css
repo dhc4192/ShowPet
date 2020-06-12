@@ -12,7 +12,7 @@
   color: #000080;
 }
 
-.sign-in-up-form{
+.sign-in-up-form {
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +21,7 @@
   display: none;
 }
 
-.sign-in-up-input{
+.sign-in-up-input {
   display: flex;
   margin: 0 auto;
   margin-top: 15px;
@@ -54,13 +54,13 @@
   border-width: 4px;
 }
 
-.account-question-text{
+.account-question-text {
   margin-bottom: 0;
 }
 
 .sign-up-link {
-text-decoration: none;
-color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .sign-up-link-button {
@@ -79,7 +79,7 @@ color: black;
   border-width: 4px;
 }
 
-.sign-in-dog-cat-image{
+.sign-in-dog-cat-image {
   display: flex;
   margin-left: auto;
   margin-top: 9px;

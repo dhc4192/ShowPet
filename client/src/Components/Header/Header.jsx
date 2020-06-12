@@ -28,10 +28,10 @@ export default function Header(props) {
           </>
         ) : null}
 
-        <Link to="/add/pet">
+        <Link className='header-add-link' to="/add/pet">
           <button className="header-add-button">
             <img className="header-add-icon" src={AddIcon} />
-            Add Pet
+            <span className='header-add-text'>Add Pet</span>
           </button>
         </Link>
       </div>

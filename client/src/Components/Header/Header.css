@@ -34,14 +34,31 @@
 
 .header-sign-out-button {
   display: flex;
-  color: white;
-  background-color: #000080;
+  margin: 35px 0 0 20px;
   text-decoration: none;
+  color: white;
+  font-family: FredokaOne;
+  background-color: #000080;
+  border-radius: 5px;
   border: 1px solid white;
 }
 
-.header-add-icon {
-
+.header-add-link {
+  display: flex;
+  margin: 13px 10px 0 auto;
+  text-decoration: none;
 }
 
+.header-add-button {
+  height: 35px;
+  border-radius: 5px;
+}
 
+.header-add-icon {
+  width: 25px;
+}
+
+.header-add-text {
+  font-size: 22px;
+  font-family: FredokaOne;
+}
