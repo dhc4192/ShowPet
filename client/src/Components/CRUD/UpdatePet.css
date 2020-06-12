@@ -6,7 +6,7 @@
 .update-create-image {
   margin: 0 auto;
   width: 35vw;
-  max-width: 270px;
+  max-width: 300px;
   border-radius: 10px;
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.7);
 }
@@ -67,4 +67,29 @@
   border-radius: 6px;
   border-width: 4px;
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 730px) {
+  .update-add-your-pet {
+    font-size: 30px;
+  }
+  .update-create-image {
+    width: 35vw;
+  }
+  .update-label {
+    font-size: 18px;
+  }
+  .update-create-input {
+    height: 45px;
+    font-size: 22px;
+  }
+  .update-create-text-area {
+    height: 85px;
+    font-size: 20px;
+  }
+  .update-create-button {
+    padding-top: 6px;
+    height: 50px;
+    font-size: 25px;
+  }
 }
