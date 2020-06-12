@@ -136,6 +136,7 @@ export default class Main extends Component {
                 {...props}
                 putPet={this.putPet}
                 categories={this.state.categories}
+                currentUser={this.props.currentUser}
               />
             );
           }}

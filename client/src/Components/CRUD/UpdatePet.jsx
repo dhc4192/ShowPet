@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import { getOnePet } from "../../services/pets";
+import Header from "../Header/Header";
+import "./UpdatePet.css";
 
 export default class CreatePet extends Component {
   state = {
@@ -41,67 +43,71 @@ export default class CreatePet extends Component {
 
   render() {
     const { pet } = this.state;
-    const { putPet, history } = this.props;
+    const { putPet, history, currentUser } = this.props;
     return (
       <>
+        <Header currentUser={currentUser} />
+        <p className='update-your-pet'>Update your Pet!</p>
+        <img className="update-image" src={pet.image} alt={pet.breed} />
         <form
+          className="update-form"
           onSubmit={(e) => {
             e.preventDefault();
             putPet(this.state.pet);
             history.push("/home");
           }}
         >
-          <label htmlFor="name">
+          <label className='update-label' htmlFor="image">Image:
             <input
-              id="name"
-              type="text"
-              name="name"
-              value={pet.name}
-              placeholder="Name"
-              onChange={this.handleChange}
-            />
-          </label>
-          <label htmlFor="breed">
-            <input
-              id="breed"
-              type="text"
-              name="breed"
-              value={pet.breed}
-              placeholder="Breed"
-              onChange={this.handleChange}
-            />
-          </label>
-          <label htmlFor="age">
-            <input
-              id="age"
-              type="text"
-              name="age"
-              value={pet.age}
-              placeholder="Age"
-              onChange={this.handleChange}
-            />
-          </label>
-          <label htmlFor="image">
-            <input
+              className="update-create-input"
               id="image"
               type="text"
               name="image"
               value={pet.image}
-              placeholder="Image"
               onChange={this.handleChange}
             />
           </label>
-          <label htmlFor="description">
+          <label className='update-label' htmlFor="name">Name:
+            <input
+              className="update-create-input"
+              id="name"
+              type="text"
+              name="name"
+              value={pet.name}
+              onChange={this.handleChange}
+            />
+          </label>
+          <label className='update-label' htmlFor="breed">Breed:
+            <input
+              className="update-create-input"
+              id="breed"
+              type="text"
+              name="breed"
+              value={pet.breed}
+              onChange={this.handleChange}
+            />
+          </label>
+          <label className='update-label' htmlFor="age">Age:
+            <input
+              className="update-create-input"
+              id="age"
+              type="text"
+              name="age"
+              value={pet.age}
+              onChange={this.handleChange}
+            />
+          </label>
+          <label className='update-label' htmlFor="description">About:
             <textarea
+              className="update-create-text-area"
               id="description"
               rows={8}
-              name="description"
               value={pet.description}
               placeholder="Description"
               onChange={this.handleChange}
             />
           </label>
-          <button>Submit</button>
+          <button className="update-button">Submit</button>
         </form>
       </>
     );
