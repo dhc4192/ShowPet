@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
+import './CreatePet.css'
 
 export default class CreatePet extends Component {
   state = {
@@ -45,7 +46,7 @@ export default class CreatePet extends Component {
         >
           <div>
             <select
-              className="categories-drop-down"
+              className="update-drop-down"
               name="category"
               onChange={(e) =>
                 this.setState({
