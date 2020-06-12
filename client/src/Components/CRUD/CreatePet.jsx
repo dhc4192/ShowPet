@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Header from "../Header/Header";
-import './CreatePet.css'
+import "./CreatePet.css";
 
 export default class CreatePet extends Component {
   state = {
@@ -33,6 +33,7 @@ export default class CreatePet extends Component {
         <Header currentUser={currentUser} />
         <p className="update-add-your-pet">Add your Pet!</p>
         <form
+          className="update-create-form"
           onSubmit={(e) => {
             e.preventDefault();
             addPet(this.state);
@@ -67,7 +68,7 @@ export default class CreatePet extends Component {
             </select>
           </div>
           <img
-            className="update-create-image"
+            className="create-image"
             src={pet.image}
             alt={pet.breed}
           />

@@ -48,15 +48,19 @@ export default class CreatePet extends Component {
       <>
         <Header currentUser={currentUser} />
         <p className="update-add-your-pet">Update your Pet!</p>
-        <img className="update-create-image" src={pet.image} alt={pet.breed} />
         <form
-          className="update-form"
+          className="update-create-form"
           onSubmit={(e) => {
             e.preventDefault();
             putPet(this.state.pet);
             history.push("/home");
           }}
         >
+          <img
+            className="update-create-image"
+            src={pet.image}
+            alt={pet.breed}
+          />
           <label className="update-label" htmlFor="image">
             Image:
             <input
