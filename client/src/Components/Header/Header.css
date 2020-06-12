@@ -6,15 +6,19 @@
   border-bottom: 2px solid white;
 }
 
+.header-logo-link {
+  text-decoration: none;
+}
+
 .header-logo {
   display: flex;
-  width: 110px;
+  width: 100px;
 }
 
 .header-title {
   display: flex;
   margin: 20px 0 0 10px;
-  font-size: 56px;
+  font-size: 50px;
   color: white;
 }
 
@@ -28,16 +32,17 @@
 .header-welcome-user {
   display: flex;
   margin: 1px 0 0 10px;
-  width: 250px;
-  font-size: 20px;
+  width: 70vw;
+  font-size: 23px;
   color: white;
 }
 
 .header-sign-out-button {
   display: flex;
-  margin: 10px 0 0 10px;
+  margin: 6px 0 0 10px;
   text-decoration: none;
   color: white;
+  font-size: 15px;
   font-family: FredokaOne;
   background-color: #000080;
   border-radius: 5px;
@@ -46,21 +51,27 @@
 
 .header-add-link {
   display: flex;
-  margin: 13px 10px 0 auto;
+  margin: 9px 10px 0 auto;
   text-decoration: none;
 }
 
 .header-add-button {
-  padding: 2px;
-  height: 35px;
+  height: 45px;
   border-radius: 5px;
 }
 
 .header-add-icon {
-  width: 25px;
+  padding-top: 2px;
+  width: 37px;
 }
 
 .header-add-text {
-  font-size: 22px;
-  font-family: FredokaOne;
+  display: none;
+}
+
+@media (max-width: 353px) {
+  .header-title {
+    margin-top: 32px;
+    font-size: 40px;
+  }
 }

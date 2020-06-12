@@ -8,7 +8,12 @@ export default function Header(props) {
   return (
     <div>
       <div className="header-one">
-        <img className="header-logo" src={ShowPetsLogo} alt="ShowPet Logo" />
+        <Link className='header-logo-link' to='/home'>
+        <img
+          className="header-logo"
+          src={ShowPetsLogo}
+          alt="Circular logo in blue with white shadow of a cat and dog facing each other."
+        /></Link>
         <p className="header-title">ShowPets</p>
       </div>
       <div className="header-two">
@@ -28,10 +33,10 @@ export default function Header(props) {
           </div>
         ) : null}
 
-        <Link className='header-add-link' to="/add/pet">
+        <Link className="header-add-link" to="/add/pet">
           <button className="header-add-button">
-            <img className="header-add-icon" src={AddIcon} />
-            <span className='header-add-text'>Add Pet</span>
+            <img className="header-add-icon" src={AddIcon} alt="plus sign" />
+            <span className="header-add-text">Add Pet</span>
           </button>
         </Link>
       </div>
