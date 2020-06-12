@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { getOnePet } from "../../services/pets";
 import { Link } from "react-router-dom";
+import EditIcon from "../../Assets/Images/Edit-Icon.png";
+import DeleteIcon from "../../Assets/Images/Trash-Icon.png";
 import Header from "../Header/Header";
+import "./Pet.css";
 
 export default class Pet extends Component {
   state = {
@@ -27,23 +30,48 @@ export default class Pet extends Component {
     return (
       <>
         <Header currentUser={currentUser} />
-        <img src={pet.image} alt={pet.breed} />
-        {currentUser && currentUser.id === pet.user_id && (
-          <>
-            <Link to={`/pets/${pet.id}/edit`}>
-              <button>Edit</button>
-            </Link>
-            <Link to="/home">
-              <button onClick={() => destroyPet(pet.id)}>Delete</button>
-            </Link>
-          </>
-        )}
+        <div className="main-pet-container">
+          <img className="pet-image" src={pet.image} alt={pet.breed} />
+          {currentUser && currentUser.id === pet.user_id && (
+            <div className="edit-delete-container">
+              <Link className="pet-edit-link" to={`/pets/${pet.id}/edit`}>
+                <button className="pet-edit-button">
+                  <img src={EditIcon} /> Edit
+                </button>
+              </Link>
+              <Link className="pet-delete-link" to="/home">
+                <button
+                  className="pet-delete-button"
+                  onClick={() => destroyPet(pet.id)}
+                >
+                  <img src={DeleteIcon} /> Delete
+                </button>
+              </Link>
+            </div>
+          )}
+        </div>
 
-        <div>
-          <p>{pet.name}</p>
-          <p>{pet.breed}</p>
-          <p>{pet.age}</p>
-          <p>{pet.description}</p>
+        <div className="pet-descriptions-container">
+          <p className="pet-descriptions">
+            <span>Name:</span>
+            <br />
+            {pet.name}
+          </p>
+          <p className="pet-descriptions">
+            <span>Breed:</span>
+            <br />
+            {pet.breed}
+          </p>
+          <p className="pet-descriptions">
+            <span>Age:</span>
+            <br />
+            {pet.age}
+          </p>
+          <p className="pet-descriptions">
+            <span>Description:</span>
+            <br />
+            {pet.description}
+          </p>
         </div>
       </>
     );

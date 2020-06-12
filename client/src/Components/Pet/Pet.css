@@ -1,0 +1,10 @@
+.main-pet-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.pet-image {
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+}
