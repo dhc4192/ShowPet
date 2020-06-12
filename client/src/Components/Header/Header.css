@@ -1,0 +1,128 @@
+.header-one {
+  display: flex;
+  flex-direction: row;
+  height: 95px;
+  background-color: #000080;
+  border-bottom: 2px solid white;
+}
+
+.header-logo-link {
+  text-decoration: none;
+}
+
+.header-logo {
+  display: flex;
+  width: 100px;
+}
+
+.header-title {
+  display: flex;
+  margin: 20px 0 0 10px;
+  font-size: 50px;
+  color: white;
+}
+
+.header-two {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  background-color: #000080;
+}
+
+.header-welcome-user {
+  display: flex;
+  margin: 1px 0 0 10px;
+  width: 70vw;
+  font-size: 23px;
+  color: white;
+}
+
+.header-sign-out-button {
+  display: flex;
+  margin: 6px 0 0 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: FredokaOne;
+  background-color: #000080;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.header-add-link {
+  display: flex;
+  margin: 9px 10px 0 auto;
+  text-decoration: none;
+}
+
+.header-add-button {
+  height: 45px;
+  border-radius: 5px;
+}
+
+.header-add-icon {
+  padding-top: 2px;
+  width: 37px;
+}
+
+.header-add-text {
+  display: none;
+}
+
+@media (max-width: 353px) {
+  .header-title {
+    margin-top: 32px;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 730px) {
+  .header-one {
+    height: 100px;
+    border-bottom: 3px solid white;
+  }
+
+  .header-logo {
+    width: 105px;
+  }
+
+  .header-title {
+    margin: 15px 0 0 15px;
+    font-size: 70px;
+  }
+
+  .header-two {
+    height: 80px;
+  }
+
+  .header-welcome-user {
+    margin: 3px 0 0 10px;
+    width: 75vw;
+    font-size: 28px;
+  }
+
+  .header-sign-out-button {
+    margin: 6px 0 0 10px;
+    font-size: 19px;
+    border: 1px solid white;
+  }
+
+  .header-add-button {
+    display: flex;
+    margin-top: 6px;
+    width: 180px;
+    height: 50px;
+  }
+
+  .header-add-icon {
+    padding-top: 4px;
+    width: 37px;
+  }
+
+  .header-add-text {
+    padding-top: 4px;
+    display: inline-flex;
+    font-size: 33px;
+    font-family: FredokaOne;
+  }
+}

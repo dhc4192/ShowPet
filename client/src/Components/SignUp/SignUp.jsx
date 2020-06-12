@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ShowPetsLogo from "../../Assets/Images/ShowPets-Logo-small.png";
+import DogCat from "../../Assets/Images/Dog-Cat.jpg";
+import './SignUp.css'
 
 export default class SignUp extends Component {
   state = {
@@ -20,9 +22,14 @@ export default class SignUp extends Component {
     const { handleSignUpSubmit, history } = this.props;
     return (
       <>
-        <img src={ShowPetsLogo} alt="ShowPet Logo" />
-        <h1>ShowPets</h1>
+        <img
+          className="sign-in-up-logo"
+          src={ShowPetsLogo}
+          alt="ShowPet Logo"
+        />
+        <p className='sign-in-up-title'>ShowPets</p>
         <form
+          className='sign-in-up-form'
           onSubmit={(e) => {
             e.preventDefault();
             handleSignUpSubmit(this.state);
@@ -34,20 +41,22 @@ export default class SignUp extends Component {
             });
           }}
         >
-          <h3>Sign Up</h3>
+          <p className='sign-in-up-text'>Sign Up</p>
           <label htmlFor="username">
             <input
+              className="sign-in-up-input"
               id="username"
               type="text"
               name="username"
               placeholder="Username"
               value={username}
+              maxlength='15' 
               onChange={this.handleChange}
             />
           </label>
-          <br />
           <label htmlFor="email">
             <input
+              className="sign-in-up-input"
               id="email"
               type="text"
               name="email"
@@ -56,19 +65,24 @@ export default class SignUp extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <br />
           <label htmlFor="password">
             <input
+              className="sign-in-up-input"
               id="password"
               type="password"
               name="password"
-              placeholder="password"
+              placeholder="Password"
               value={password}
               onChange={this.handleChange}
             />
           </label>
-          <button>SIGN UP</button>
+          <button className="sign-in-up-button">SIGN UP</button>
         </form>
+        <img
+          className="sign-up-dog-cat-image"
+          src={DogCat}
+          alt="Outline of a dog and a cat."
+        />
       </>
     );
   }

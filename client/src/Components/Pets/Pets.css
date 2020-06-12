@@ -1,0 +1,48 @@
+.main-pets-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.pets-link {
+  text-decoration: none;
+  color: black;
+}
+
+.pets-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10px auto 10px auto;
+  width: 75vw;
+  height: auto;
+  max-width: 370px;
+  border-radius: 10px;
+  border: 4px solid #3a3af7;
+  box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.7);
+}
+
+.pets-images {
+  margin: 0 auto;
+  padding: 10px 0 40px 0;
+  width: 70vw;
+  max-width: 330px;
+  max-height: 396px;
+}
+
+.pets-name {
+  position: absolute;
+  margin-bottom: 5px;
+  bottom: 0;
+  width: 100%;
+  font-size: 30px;
+}
+
+@media (max-width: 375px) {
+  .pets-name {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 730px) {
+  
+}

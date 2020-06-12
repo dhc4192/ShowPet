@@ -1,0 +1,90 @@
+.main-pet-container {
+  display: flex;
+  margin: 0 auto 15px auto;
+  flex-direction: column;
+  width: 85vw;
+  max-width: 475px;
+}
+
+.pet-image {
+  display: flex;
+  margin: 25px auto 0 auto;
+  width: 85vw;
+  max-width: 475px;
+  border-radius: 10px;
+  box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.6);
+}
+
+.edit-delete-container {
+  display: flex;
+  margin: 5px 15px 0 auto;
+}
+
+.pet-edit-link {
+  text-decoration: none;
+  color: black;
+}
+
+.pet-edit-icon {
+  width: 25px;
+}
+
+.pet-edit-text {
+  font-size: 20px;
+  font-family: FredokaOne;
+}
+
+.pet-edit-button {
+  width: 110px;
+  border-radius: 10px;
+  box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.6);
+}
+
+.pet-delete-link {
+  text-decoration: none;
+  color: black;
+}
+
+.pet-delete-icon {
+  width: 25px;
+}
+
+.pet-delete-text {
+  font-size: 20px;
+  font-family: FredokaOne;
+}
+
+.pet-delete-button {
+  width: 110px;
+  border-radius: 10px;
+  box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.6);
+}
+
+.pet-descriptions-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 10px auto;
+  padding: 5px;
+  width: 85vw;
+  max-width: 512px;
+  text-align: left;
+  border: 2px solid #0000b5;
+  border-radius: 10px;
+  box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.6);
+}
+
+.pet-descriptions-title {
+  text-decoration: underline;
+  margin: 0;
+  font-size: 15px;
+  width: 85vw;
+}
+
+.pet-descriptions {
+  margin: 0;
+  width: 85vw;
+  max-width: 512px;
+  height: inherit;
+  font-size: 20px;
+  word-break: break-all;
+}

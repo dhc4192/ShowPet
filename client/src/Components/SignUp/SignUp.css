@@ -1,0 +1,12 @@
+.sign-up-dog-cat-image {
+  display: flex;
+  margin: 20px 0 0 auto;
+  width: 250px;
+}
+
+@media (min-width: 730px) {
+  .sign-up-dog-cat-image {
+    margin-top: 23px;
+    width: 330px;
+  }
+}

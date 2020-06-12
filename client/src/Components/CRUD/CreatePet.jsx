@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Header from "../Header/Header";
+import "./CreatePet.css";
 
 export default class CreatePet extends Component {
   state = {
@@ -25,10 +27,13 @@ export default class CreatePet extends Component {
   render() {
     const { pet } = this.state;
     const { categories } = this.props;
-    const { addPet, history } = this.props;
+    const { addPet, history, currentUser } = this.props;
     return (
       <>
+        <Header currentUser={currentUser} />
+        <p className="update-add-your-pet">Add your Pet!</p>
         <form
+          className="update-create-form"
           onSubmit={(e) => {
             e.preventDefault();
             addPet(this.state);
@@ -42,6 +47,7 @@ export default class CreatePet extends Component {
         >
           <div>
             <select
+              className="update-drop-down"
               name="category"
               onChange={(e) =>
                 this.setState({
@@ -49,16 +55,33 @@ export default class CreatePet extends Component {
                 })
               }
             >
-              <option>Category</option>
+              <option className="categories-default-option">Category</option>
               {categories.map((category) => (
-                <option key={category.name} value={parseInt(category.id)}>
+                <option
+                  className="categories-options"
+                  key={category.name}
+                  value={parseInt(category.id)}
+                >
                   {category.name}
                 </option>
               ))}
             </select>
           </div>
+          <img className="create-image" src={pet.image} alt={pet.breed} />
+          <label htmlFor="image">
+            <input
+              className="update-create-input"
+              id="image"
+              type="text"
+              name="image"
+              value={pet.image}
+              placeholder="Image"
+              onChange={this.handleChange}
+            />
+          </label>
           <label htmlFor="name">
             <input
+              className="update-create-input"
               id="name"
               type="text"
               name="name"
@@ -69,6 +92,7 @@ export default class CreatePet extends Component {
           </label>
           <label htmlFor="breed">
             <input
+              className="update-create-input"
               id="breed"
               type="text"
               name="breed"
@@ -79,6 +103,7 @@ export default class CreatePet extends Component {
           </label>
           <label htmlFor="age">
             <input
+              className="update-create-input"
               id="age"
               type="text"
               name="age"
@@ -87,18 +112,9 @@ export default class CreatePet extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <label htmlFor="image">
-            <input
-              id="image"
-              type="text"
-              name="image"
-              value={pet.image}
-              placeholder="Image"
-              onChange={this.handleChange}
-            />
-          </label>
           <label htmlFor="description">
             <textarea
+              className="update-create-text-area"
               id="description"
               rows={8}
               name="description"
@@ -107,7 +123,7 @@ export default class CreatePet extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <button>Submit</button>
+          <button className="update-create-button">Submit</button>
         </form>
       </>
     );
