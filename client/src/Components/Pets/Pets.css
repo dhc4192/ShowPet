@@ -13,18 +13,17 @@
   flex-direction: column;
   position: relative;
   margin: 10px auto 10px auto;
-  border: 4px solid #3a3af7;
   width: 75vw;
   height: auto;
   max-width: 370px;
   border-radius: 10px;
+  border: 4px solid #3a3af7;
   box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.7);
 }
 
 .pets-images {
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 40px;
+  padding: 10px 0 40px 0;
   width: 70vw;
   max-width: 330px;
   max-height: 396px;
@@ -41,6 +40,5 @@
 @media (max-width: 375px) {
   .pets-name {
     font-size: 20px;
-
   }
 }

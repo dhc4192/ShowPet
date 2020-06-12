@@ -1,0 +1,11 @@
+.categories-drop-down {
+  margin: 20px;
+  width: 40vw;
+  max-width: 250px;
+  height: 35px;
+  font-family: FredokaOne;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 4px solid #3a3af7;
+  box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.7);
+}

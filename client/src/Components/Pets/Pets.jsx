@@ -14,7 +14,8 @@ export default function Pets(props) {
             return pet.category_id === parseInt(selectedCategory);
           }
         })
-        .reverse().map((pet) => (
+        .reverse()
+        .map((pet) => (
           <div className="main-pets-container" key={pet.id}>
             <Link className="pets-link" to={`/pets/${pet.id}`}>
               <div className="pets-container">
