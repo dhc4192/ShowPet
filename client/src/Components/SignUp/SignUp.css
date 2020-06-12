@@ -1,6 +1,5 @@
 .sign-up-dog-cat-image {
   display: flex;
-  margin-left: auto;
-  margin-top: 20px;
+  margin: 20px 0 0 auto;
   width: 250px;
 }

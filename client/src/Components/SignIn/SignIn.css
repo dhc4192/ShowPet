@@ -1,7 +1,6 @@
 .sign-in-up-logo {
   display: flex;
-  margin: 0 auto;
-  margin-top: 10px;
+  margin: 10px auto 0 auto;
   width: 55vw;
   max-width: 350px;
 }
@@ -23,8 +22,7 @@
 
 .sign-in-up-input {
   display: flex;
-  margin: 0 auto;
-  margin-top: 15px;
+  margin: 15px auto 0 auto;
   padding-left: 10px;
   width: 78vw;
   max-width: 420px;
@@ -39,8 +37,7 @@
 .sign-in-up-button {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  margin-top: 15px;
+  margin: 15px auto 0 auto;
   padding-top: 5px;
   width: 50vw;
   max-width: 225px;
@@ -80,7 +77,6 @@
 
 .sign-in-dog-cat-image {
   display: flex;
-  margin-left: auto;
-  margin-top: 9px;
+  margin: 9px 0 0 auto;
   width: 250px;
 }

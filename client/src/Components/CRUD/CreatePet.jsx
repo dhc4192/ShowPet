@@ -67,11 +67,7 @@ export default class CreatePet extends Component {
               ))}
             </select>
           </div>
-          <img
-            className="create-image"
-            src={pet.image}
-            alt={pet.breed}
-          />
+          <img className="create-image" src={pet.image} alt={pet.breed} />
           <label htmlFor="image">
             <input
               className="update-create-input"
