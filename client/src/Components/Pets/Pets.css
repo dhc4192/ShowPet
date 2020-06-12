@@ -1,9 +1,16 @@
+.main-pets-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .pets-link {
   text-decoration: none;
   color: black;
 }
 
 .pets-container {
+  display: flex;
+  flex-direction: column;
   margin: 10px auto 10px auto;
   border: 4px solid #3a3af7;
   width: 75vw;
@@ -14,12 +21,11 @@
 }
 
 .pets-images {
-  padding-top: 10px;
+  padding: 10px 0 0 10px;
   width: 70vw;
   max-width: 330px;
 }
 
 .pets-name {
   margin-top: 5px;
-
 }

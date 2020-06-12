@@ -14,15 +14,15 @@ export default function Pets(props) {
             return pet.category_id === parseInt(selectedCategory);
           }
         })
-        .map((pet) => (
-          <React.Fragment key={pet.id}>
+        .reverse().map((pet) => (
+          <div className="main-pets-container" key={pet.id}>
             <Link className="pets-link" to={`/pets/${pet.id}`}>
-              <div className='pets-container'>
+              <div className="pets-container">
                 <img className="pets-images" src={pet.image} alt={pet.breed} />
                 <p className="pets-name">{pet.name}</p>
               </div>
             </Link>
-          </React.Fragment>
+          </div>
         ))}
     </div>
   );
