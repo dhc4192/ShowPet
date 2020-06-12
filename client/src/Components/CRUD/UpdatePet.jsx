@@ -47,8 +47,8 @@ export default class CreatePet extends Component {
     return (
       <>
         <Header currentUser={currentUser} />
-        <p className='update-your-pet'>Update your Pet!</p>
-        <img className="update-image" src={pet.image} alt={pet.breed} />
+        <p className="update-add-your-pet">Update your Pet!</p>
+        <img className="update-create-image" src={pet.image} alt={pet.breed} />
         <form
           className="update-form"
           onSubmit={(e) => {
@@ -57,7 +57,8 @@ export default class CreatePet extends Component {
             history.push("/home");
           }}
         >
-          <label className='update-label' htmlFor="image">Image:
+          <label className="update-label" htmlFor="image">
+            Image:
             <input
               className="update-create-input"
               id="image"
@@ -67,7 +68,8 @@ export default class CreatePet extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <label className='update-label' htmlFor="name">Name:
+          <label className="update-label" htmlFor="name">
+            Name:
             <input
               className="update-create-input"
               id="name"
@@ -77,7 +79,8 @@ export default class CreatePet extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <label className='update-label' htmlFor="breed">Breed:
+          <label className="update-label" htmlFor="breed">
+            Breed:
             <input
               className="update-create-input"
               id="breed"
@@ -87,7 +90,8 @@ export default class CreatePet extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <label className='update-label' htmlFor="age">Age:
+          <label className="update-label" htmlFor="age">
+            Age:
             <input
               className="update-create-input"
               id="age"
@@ -97,7 +101,8 @@ export default class CreatePet extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <label className='update-label' htmlFor="description">About:
+          <label className="update-label" htmlFor="description">
+            About:
             <textarea
               className="update-create-text-area"
               id="description"
@@ -107,7 +112,7 @@ export default class CreatePet extends Component {
               onChange={this.handleChange}
             />
           </label>
-          <button className="update-button">Submit</button>
+          <button className="update-create-button">Submit</button>
         </form>
       </>
     );
