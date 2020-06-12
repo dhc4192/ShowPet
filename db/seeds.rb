@@ -16,14 +16,14 @@ User.destroy_all
   {
     username: 'Dae',
     email: 'dae@gmail.com',
-    password: '123123'
+    password: 'dhc4192'
   }
 )
 @user2 = User.create!(
   {
     username: 'DC',
     email: 'dc@gmail.com',
-    password: '123123'
+    password: 'dhc4192'
   }
 )
 p "#{User.count} user(s) created"
