@@ -13,7 +13,7 @@ export default function Header(props) {
       </div>
       <div className="header-two">
         {props.currentUser ? (
-          <>
+          <div>
             <p className="header-welcome-user">
               Welcome, {props.currentUser.username}
             </p>
@@ -25,7 +25,7 @@ export default function Header(props) {
                 Sign Out
               </button>
             </Link>
-          </>
+          </div>
         ) : null}
 
         <Link className='header-add-link' to="/add/pet">

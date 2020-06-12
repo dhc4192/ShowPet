@@ -27,14 +27,15 @@
 
 .header-welcome-user {
   display: flex;
-  margin: 30px 0 0 10px;
+  margin: 1px 0 0 10px;
+  width: 250px;
   font-size: 20px;
   color: white;
 }
 
 .header-sign-out-button {
   display: flex;
-  margin: 35px 0 0 20px;
+  margin: 10px 0 0 10px;
   text-decoration: none;
   color: white;
   font-family: FredokaOne;
@@ -50,6 +51,7 @@
 }
 
 .header-add-button {
+  padding: 2px;
   height: 35px;
   border-radius: 5px;
 }
