@@ -25,7 +25,7 @@
 .header-two {
   display: flex;
   flex-direction: row;
-  height: 60px;
+  height: 65px;
   background-color: #000080;
 }
 
@@ -45,19 +45,26 @@
 
 .header-sign-out-link {
   display: flex;
-  margin: 5px 0 0 10px;
+  margin: 3px 0 0 10px;
   text-decoration: none;
-  width: 76px;
+  width: 83px;
 }
 
 .header-sign-out-button {
   display: flex;
   color: white;
+  width: 83px;
+  height: 30px;
   font-size: 15px;
   font-family: FredokaOne;
   background-color: #000080;
   border-radius: 5px;
   border: 1px solid white;
+}
+
+.header-sign-out-text {
+  font-size: 16px;
+  margin: 3px auto 0 auto;
 }
 
 .header-add-link {
@@ -69,6 +76,7 @@
 .header-add-button {
   height: 45px;
   border-radius: 5px;
+  background-color: white;
 }
 
 .header-add-icon {

@@ -31,7 +31,7 @@ export default function Header(props) {
                   className="header-sign-out-button"
                   onClick={props.handleSignOut}
                 >
-                  Sign Out
+                  <p className='header-sign-out-text'>Sign Out</p>
                 </button>
               </Link>
             </div>

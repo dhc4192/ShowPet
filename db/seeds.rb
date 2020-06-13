@@ -137,7 +137,7 @@ Pet.create!(
 )
 Pet.create!(
   name: 'Kid',
-  image: 'https://i.ibb.co/6N4dKxM/Kid2.jpg',
+  image: 'https://i.ibb.co/dDqyrCs/Kid2.jpg',
   breed: 'Maltese',
   age: 6,
   description: 'Rocking that Burberry trench coat.',
