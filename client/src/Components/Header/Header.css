@@ -29,6 +29,12 @@
   background-color: #000080;
 }
 
+.header-welcome-text {
+  margin: 0;
+  width: 500px;
+  text-align: left;
+}
+
 .header-welcome-user {
   display: flex;
   margin: 1px 0 0 10px;
@@ -121,6 +127,7 @@
     margin-top: 6px;
     width: 180px;
     height: 50px;
+    border-radius: 10px;
   }
 
   .header-add-icon {
@@ -137,6 +144,9 @@
 }
 
 @media (min-width: 1024px) {
+  .header-logo {
+    width: 105px;
+  }
   .header-container {
     display: flex;
     width: 100vw;
@@ -152,6 +162,7 @@
   .main-header-welcome-container {
     display: flex;
     margin-left: auto;
+    margin-top: 10px;
   }
   .header-welcome-user {
     display: flex;

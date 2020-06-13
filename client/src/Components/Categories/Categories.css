@@ -15,16 +15,25 @@
   display: none;
 }
 
-
-
 @media (min-width: 1024px) {
+  .categories-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
   .categories-add-link {
     display: flex;
-    margin: 0;
+    margin: 10px 0 0 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    border: 4px solid #3a3af7;
+    box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.7);
   }
   .categories-add-button {
     width: 140px;
     height: 40px;
+    border-radius: 5px;
+    border: none;
   }
   .categories-add-icon {
     width: 29px;
@@ -32,5 +41,10 @@
   .categories-add-text {
     font-size: 25px;
     font-family: FredokaOne;
+  }
+
+  .categories-drop-down {
+    display: flex;
+    margin: 10px 20px 0 auto;
   }
 }
