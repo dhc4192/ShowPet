@@ -6,7 +6,7 @@ import "./Header.css";
 
 export default function Header(props) {
   return (
-    <div className='header-container'>
+    <div className="header-container">
       <div className="header-one">
         <Link className="header-logo-link" to="/home">
           <img
@@ -19,18 +19,20 @@ export default function Header(props) {
       </div>
       <div className="header-two">
         {props.currentUser ? (
-          <div>
-            <p className="header-welcome-user">
-              Welcome, {props.currentUser.username}
-            </p>
-            <Link className='header-sign-out-link' to="/">
-              <button
-                className="header-sign-out-button"
-                onClick={props.handleSignOut}
-              >
-                Sign Out
-              </button>
-            </Link>
+          <div className="main-header-welcome-container">
+            <div className="header-welcome-container">
+              <p className="header-welcome-user">
+                <p className='header-welcome-text'>Welcome, {props.currentUser.username}</p>
+              </p>
+              <Link className="header-sign-out-link" to="/">
+                <button
+                  className="header-sign-out-button"
+                  onClick={props.handleSignOut}
+                >
+                  Sign Out
+                </button>
+              </Link>
+            </div>
           </div>
         ) : null}
 

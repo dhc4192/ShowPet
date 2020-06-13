@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import AddIcon from "../../Assets/Images/Add-Icon.png";
+
 import "./Categories.css";
 
 export default class Categories extends Component {
@@ -6,6 +9,16 @@ export default class Categories extends Component {
     const { handleCategoryChange, categories } = this.props;
     return (
       <div>
+        <Link className="categories-add-link" to="/add/pet">
+          <button className="categories-add-button">
+            <img
+              className="categories-add-icon"
+              src={AddIcon}
+              alt="plus sign"
+            />
+            <span className="categories-add-text">Add Pet</span>
+          </button>
+        </Link>
         <select
           className="categories-drop-down"
           onChange={handleCategoryChange}

@@ -10,3 +10,27 @@
   border: 4px solid #3a3af7;
   box-shadow: 6px 7px 11px rgba(0, 0, 0, 0.7);
 }
+
+.categories-add-link {
+  display: none;
+}
+
+
+
+@media (min-width: 1024px) {
+  .categories-add-link {
+    display: flex;
+    margin: 0;
+  }
+  .categories-add-button {
+    width: 140px;
+    height: 40px;
+  }
+  .categories-add-icon {
+    width: 29px;
+  }
+  .categories-add-text {
+    font-size: 25px;
+    font-family: FredokaOne;
+  }
+}
