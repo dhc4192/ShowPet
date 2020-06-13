@@ -3,6 +3,10 @@
   font-size: 18px;
 }
 
+.update-form-container {
+  margin: 0 auto;
+}
+
 .update-create-image {
   margin: 0 auto;
   width: 35vw;
@@ -75,9 +79,6 @@
   }
   .update-create-image {
     width: 35vw;
-  }
-  .update-form-container {
-    margin: 0 auto;
   }
   .update-label {
     font-size: 18px;
