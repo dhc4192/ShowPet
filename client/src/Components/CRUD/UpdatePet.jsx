@@ -56,67 +56,71 @@ export default class CreatePet extends Component {
             history.push("/home");
           }}
         >
-          <img
-            className="update-create-image"
-            src={pet.image}
-            alt={pet.breed}
-          />
-          <label className="update-label" htmlFor="image">
-            Image:
-            <input
-              className="update-create-input"
-              id="image"
-              type="text"
-              name="image"
-              value={pet.image}
-              onChange={this.handleChange}
+          <div className='main- update-form-container'>
+            <img
+              className="update-create-image"
+              src={pet.image}
+              alt={pet.breed}
             />
-          </label>
-          <label className="update-label" htmlFor="name">
-            Name:
-            <input
-              className="update-create-input"
-              id="name"
-              type="text"
-              name="name"
-              value={pet.name}
-              onChange={this.handleChange}
-            />
-          </label>
-          <label className="update-label" htmlFor="breed">
-            Breed:
-            <input
-              className="update-create-input"
-              id="breed"
-              type="text"
-              name="breed"
-              value={pet.breed}
-              onChange={this.handleChange}
-            />
-          </label>
-          <label className="update-label" htmlFor="age">
-            Age:
-            <input
-              className="update-create-input"
-              id="age"
-              type="text"
-              name="age"
-              value={pet.age}
-              onChange={this.handleChange}
-            />
-          </label>
-          <label className="update-label" htmlFor="description">
-            About:
-            <textarea
-              className="update-create-text-area"
-              id="description"
-              rows={8}
-              value={pet.description}
-              placeholder="Description"
-              onChange={this.handleChange}
-            />
-          </label>
-          <button className="update-create-button">Submit</button>
+            <div>
+              <label className="update-label" htmlFor="image">
+                Image:
+                <input
+                  className="update-create-input"
+                  id="image"
+                  type="text"
+                  name="image"
+                  value={pet.image}
+                  onChange={this.handleChange}
+                />
+              </label>
+              <label className="update-label" htmlFor="name">
+                Name:
+                <input
+                  className="update-create-input"
+                  id="name"
+                  type="text"
+                  name="name"
+                  value={pet.name}
+                  onChange={this.handleChange}
+                />
+              </label>
+              <label className="update-label" htmlFor="breed">
+                Breed:
+                <input
+                  className="update-create-input"
+                  id="breed"
+                  type="text"
+                  name="breed"
+                  value={pet.breed}
+                  onChange={this.handleChange}
+                />
+              </label>
+              <label className="update-label" htmlFor="age">
+                Age:
+                <input
+                  className="update-create-input"
+                  id="age"
+                  type="text"
+                  name="age"
+                  value={pet.age}
+                  onChange={this.handleChange}
+                />
+              </label>
+              <label className="update-label" htmlFor="description">
+                About:
+                <textarea
+                  className="update-create-text-area"
+                  id="description"
+                  rows={8}
+                  value={pet.description}
+                  placeholder="Description"
+                  onChange={this.handleChange}
+                />
+              </label>
+              <button className="update-create-button">Submit</button>
+            </div>
+          </div>
         </form>
       </>
     );

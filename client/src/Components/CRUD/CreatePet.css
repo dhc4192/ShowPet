@@ -19,11 +19,33 @@
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
+.create-dog-cat-image {
+  display: none;
+}
+
 @media (min-width: 730px) {
   .update-drop-down {
     margin-bottom: 15px;
     padding-left: 5px;
     height: 40px;
     font-size: 23px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-create-container {
+    display: flex;
+    height: 85vh;
+  }
+  .create-container {
+    margin: 20px;
+  }
+  .create-dog-cat-image {
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 20px;
+    width: 350px;
+    height: 450px;
   }
 }

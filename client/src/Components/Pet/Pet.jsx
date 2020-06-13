@@ -30,52 +30,54 @@ export default class Pet extends Component {
     return (
       <>
         <Header currentUser={currentUser} />
-        <div className="main-pet-container">
-          <div className='pet-container'>
-            <img className="pet-image" src={pet.image} alt={pet.breed} />
-            {currentUser && currentUser.id === pet.user_id && (
-              <div className="edit-delete-container">
-                <Link className="pet-edit-link" to={`/pets/${pet.id}/edit`}>
-                  <button className="pet-edit-button">
-                    <img className="pet-edit-icon" src={EditIcon} />{" "}
-                    <span className="pet-edit-text">Edit</span>
-                  </button>
-                </Link>
-                <Link className="pet-delete-link" to="/home">
-                  <button
-                    className="pet-delete-button"
-                    onClick={() => destroyPet(pet.id)}
-                  >
-                    <img className="pet-delete-icon" src={DeleteIcon} />{" "}
-                    <span className="pet-delete-text">Delete</span>
-                  </button>
-                </Link>
-              </div>
-            )}
+        <div className="top-pet-container">
+          <div className="main-pet-container">
+            <div className="pet-container">
+              <img className="pet-image" src={pet.image} alt={pet.breed} />
+              {currentUser && currentUser.id === pet.user_id && (
+                <div className="edit-delete-container">
+                  <Link className="pet-edit-link" to={`/pets/${pet.id}/edit`}>
+                    <button className="pet-edit-button">
+                      <img className="pet-edit-icon" src={EditIcon} />{" "}
+                      <span className="pet-edit-text">Edit</span>
+                    </button>
+                  </Link>
+                  <Link className="pet-delete-link" to="/home">
+                    <button
+                      className="pet-delete-button"
+                      onClick={() => destroyPet(pet.id)}
+                    >
+                      <img className="pet-delete-icon" src={DeleteIcon} />{" "}
+                      <span className="pet-delete-text">Delete</span>
+                    </button>
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
-        </div>
 
-        <div className="pet-descriptions-container">
-          <p className="pet-descriptions">
-            <span className="pet-descriptions-title">Name:</span>
-            <br />
-            {pet.name} <hr />
-          </p>
-          <p className="pet-descriptions">
-            <span className="pet-descriptions-title">Breed:</span>
-            <br />
-            {pet.breed} <hr />
-          </p>
-          <p className="pet-descriptions">
-            <span className="pet-descriptions-title">Age:</span>
-            <br />
-            {pet.age} <hr />
-          </p>
-          <p className="pet-descriptions">
-            <span className="pet-descriptions-title">Description:</span>
-            <br />
-            {pet.description}
-          </p>
+          <div className="pet-descriptions-container">
+            <p className="pet-descriptions">
+              <span className="pet-descriptions-title">Name:</span>
+              <br />
+              {pet.name} <hr />
+            </p>
+            <p className="pet-descriptions">
+              <span className="pet-descriptions-title">Breed:</span>
+              <br />
+              {pet.breed} <hr />
+            </p>
+            <p className="pet-descriptions">
+              <span className="pet-descriptions-title">Age:</span>
+              <br />
+              {pet.age} <hr />
+            </p>
+            <p className="pet-descriptions">
+              <span className="pet-descriptions-title">Description:</span>
+              <br />
+              {pet.description}
+            </p>
+          </div>
         </div>
       </>
     );
