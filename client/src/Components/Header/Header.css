@@ -92,36 +92,29 @@
     height: 100px;
     border-bottom: 3px solid white;
   }
-
   .header-logo {
     width: 105px;
   }
-
   .header-title {
     margin: 15px 0 0 15px;
     font-size: 70px;
   }
-
   .header-two {
-    height: 80px;
     padding-right: 20px;
+    height: 80px;
   }
-
   .header-welcome-user {
     margin: 3px 0 0 10px;
     width: 75vw;
     font-size: 28px;
   }
-
   .header-sign-out-link {
     margin: 10px 0 0 10px;
     width: 90px;
   }
-
   .header-sign-out-button {
     font-size: 18px;
   }
-
   .header-add-button {
     display: flex;
     margin-top: 6px;
@@ -129,12 +122,10 @@
     height: 50px;
     border-radius: 10px;
   }
-
   .header-add-icon {
     padding-top: 4px;
     width: 37px;
   }
-
   .header-add-text {
     padding-top: 4px;
     display: inline-flex;
@@ -160,9 +151,8 @@
     height: 100px;
   }
   .main-header-welcome-container {
+    margin: 10px 0 0 auto;
     display: flex;
-    margin-left: auto;
-    margin-top: 10px;
   }
   .header-welcome-user {
     display: flex;
@@ -170,10 +160,10 @@
     font-size: 20px;
   }
   .header-welcome-text {
+    text-align: right;
     margin-bottom: 10px;
     width: 330px;
     font-size: 22px;
-    text-align: right;
   }
   .header-sign-out-link {
     margin: 0 10px 10px auto;

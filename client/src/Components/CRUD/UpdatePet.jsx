@@ -56,7 +56,7 @@ export default class CreatePet extends Component {
             history.push("/home");
           }}
         >
-          <div className='main- update-form-container'>
+          <div className="main- update-form-container">
             <img
               className="update-create-image"
               src={pet.image}

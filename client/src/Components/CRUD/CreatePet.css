@@ -42,9 +42,7 @@
   }
   .create-dog-cat-image {
     display: flex;
-    margin-left: auto;
-    margin-top: auto;
-    margin-right: 20px;
+    margin: auto 20px 0 auto;
     width: 350px;
     height: 450px;
   }

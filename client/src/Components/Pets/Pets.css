@@ -65,12 +65,12 @@
     width: 21vw;
   }
   .pets-images {
-    width: 19vw;
     margin-bottom: 5px;
+    width: 19vw;
   }
   .pets-name {
     margin: 0;
-    font-size: 20px;
     padding-bottom: 5px;
+    font-size: 20px;
   }
 }

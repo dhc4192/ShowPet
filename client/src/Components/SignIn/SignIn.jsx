@@ -31,7 +31,7 @@ export default class SignIn extends Component {
             />
             <p className="sign-in-up-title">ShowPets</p>
           </div>
-          <div className='main-sign-in-up-form-container'>
+          <div className="main-sign-in-up-form-container">
             <div className="sign-in-up-form-container">
               <form
                 className="sign-in-up-form"

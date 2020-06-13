@@ -104,21 +104,21 @@
   }
 }
 
-@media (min-width: 1024px){
-  .main-sign-in-up-container{
+@media (min-width: 1024px) {
+  .main-sign-in-up-container {
     display: flex;
   }
-  .sign-in-up-logo{
+  .sign-in-up-logo {
     margin-top: 20px;
     width: 450px;
   }
-  .sign-in-up-title{
+  .sign-in-up-title {
     font-size: 85px;
   }
-  .main-sign-in-up-form-container{
+  .main-sign-in-up-form-container {
     width: 1000px;
   }
-  .sign-in-up-form-container{
+  .sign-in-up-form-container {
     margin-left: 30px;
     height: 400px;
   }

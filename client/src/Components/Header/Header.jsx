@@ -22,7 +22,9 @@ export default function Header(props) {
           <div className="main-header-welcome-container">
             <div className="header-welcome-container">
               <p className="header-welcome-user">
-                <p className='header-welcome-text'>Welcome, {props.currentUser.username}</p>
+                <p className="header-welcome-text">
+                  Welcome, {props.currentUser.username}
+                </p>
               </p>
               <Link className="header-sign-out-link" to="/">
                 <button

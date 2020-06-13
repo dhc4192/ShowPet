@@ -8,7 +8,7 @@ export default class Categories extends Component {
   render() {
     const { handleCategoryChange, categories } = this.props;
     return (
-      <div className='categories-container'>
+      <div className="categories-container">
         <Link className="categories-add-link" to="/add/pet">
           <button className="categories-add-button">
             <img
