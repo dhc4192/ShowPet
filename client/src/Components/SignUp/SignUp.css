@@ -10,3 +10,33 @@
     width: 330px;
   }
 }
+
+@media (min-width: 1024px) {
+  .main-sign-in-up-container {
+    display: flex;
+  }
+  .sign-in-up-logo {
+    margin-top: 20px;
+    width: 450px;
+  }
+  .sign-in-up-title {
+    font-size: 85px;
+  }
+  .main-sign-in-up-form-container {
+    width: 1000px;
+  }
+  .sign-in-up-form-container {
+    margin-left: 30px;
+    height: 400px;
+  }
+  .sign-in-up-text {
+    display: flex;
+    margin: 50px auto 0 auto;
+    font-size: 30px;
+  }
+  .sign-up-dog-cat-image {
+    margin: 9px 0 0 auto;
+    display: flex;
+    width: 400px;
+  }
+}

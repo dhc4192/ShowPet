@@ -1,8 +1,7 @@
 .sign-in-up-logo {
   display: flex;
   margin: 10px auto 0 auto;
-  width: 55vw;
-  max-width: 300px;
+  width: 150px;
 }
 
 .sign-in-up-title {
@@ -25,7 +24,7 @@
   margin: 15px auto 0 auto;
   padding-left: 10px;
   width: 78vw;
-  max-width: 420px;
+  max-width: 510px;
   height: 35px;
   font-size: 18px;
   font-weight: 500;
@@ -82,6 +81,9 @@
 }
 
 @media (min-width: 730px) {
+  .sign-in-up-logo {
+    width: 300px;
+  }
   .sign-in-up-input {
     height: 45px;
     font-size: 27px;
@@ -99,5 +101,34 @@
   }
   .sign-in-dog-cat-image {
     width: 330px;
+  }
+}
+
+@media (min-width: 1024px){
+  .main-sign-in-up-container{
+    display: flex;
+  }
+  .sign-in-up-logo{
+    margin-top: 20px;
+    width: 450px;
+  }
+  .sign-in-up-title{
+    font-size: 85px;
+  }
+  .main-sign-in-up-form-container{
+    width: 1000px;
+  }
+  .sign-in-up-form-container{
+    margin-left: 30px;
+    height: 400px;
+  }
+  .sign-in-up-text {
+    display: flex;
+    margin: 50px auto 0 auto;
+    font-size: 30px;
+  }
+  .sign-in-dog-cat-image {
+    display: flex;
+    width: 400px;
   }
 }

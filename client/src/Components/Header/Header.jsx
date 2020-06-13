@@ -6,7 +6,7 @@ import "./Header.css";
 
 export default function Header(props) {
   return (
-    <div>
+    <div className='header-container'>
       <div className="header-one">
         <Link className="header-logo-link" to="/home">
           <img
