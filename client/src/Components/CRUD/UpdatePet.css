@@ -73,6 +73,19 @@
   box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.7);
 }
 
+.update-create-input:hover {
+  border-width: 5px;
+  transition: ease-in 0.2s;
+}
+.update-create-text-area:hover {
+  border-width: 5px;
+  transition: ease-in 0.2s;
+}
+.update-create-button:hover {
+  border-width: 5px;
+  transition: ease-in 0.2s;
+}
+
 @media (min-width: 730px) {
   .update-add-your-pet {
     font-size: 30px;

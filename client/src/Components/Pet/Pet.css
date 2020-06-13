@@ -90,6 +90,17 @@
   word-break: break-all;
 }
 
+.pet-edit-button:hover {
+  width: 120px;
+  border-width: 5px;
+  transition: ease-in 0.2s;
+}
+.pet-delete-button:hover {
+  width: 120px;
+  border-width: 5px;
+  transition: ease-in 0.2s;
+}
+
 @media (min-width: 730px) {
   .main-pet-container {
     margin: 20px 0 20px 20px;

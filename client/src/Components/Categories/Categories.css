@@ -15,6 +15,11 @@
   display: none;
 }
 
+.categories-drop-down:hover {
+  border-width: 5px;
+  transition: ease-in 0.2s;
+}
+
 @media (min-width: 1024px) {
   .categories-container {
     display: flex;
@@ -42,9 +47,12 @@
     font-size: 25px;
     font-family: FredokaOne;
   }
-
   .categories-drop-down {
     display: flex;
     margin: 10px 20px 0 auto;
+  }
+  .categories-add-link:hover {
+    border-width: 5px;
+    transition: ease-in 0.2s;
   }
 }

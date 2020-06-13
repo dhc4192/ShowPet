@@ -50,7 +50,7 @@ export default class CreatePet extends Component {
             >
               <div>
                 <select
-                  className="update-drop-down"
+                  className="create-drop-down"
                   name="category"
                   onChange={(e) =>
                     this.setState({

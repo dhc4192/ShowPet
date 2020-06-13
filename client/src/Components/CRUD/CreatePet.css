@@ -1,4 +1,4 @@
-.update-drop-down {
+.create-drop-down {
   margin-bottom: 10px;
   width: 40vw;
   max-width: 300px;
@@ -23,8 +23,13 @@
   display: none;
 }
 
+.create-drop-down:hover {
+  border-width: 5px;
+  transition: ease-in 0.2s;
+}
+
 @media (min-width: 730px) {
-  .update-drop-down {
+  .create-drop-down {
     margin-bottom: 15px;
     padding-left: 5px;
     height: 40px;
