@@ -47,13 +47,13 @@
   display: flex;
   margin: 3px 0 0 10px;
   text-decoration: none;
-  width: 90px;
+  width: 120px;
 }
 
 .header-sign-out-button {
   display: flex;
   color: white;
-  width: 90px;
+  width: 120px;
   height: 30px;
   font-size: 15px;
   font-family: FredokaOne;
@@ -88,7 +88,37 @@
   display: none;
 }
 
+.header-sign-in-link {
+  display: flex;
+  margin: 19px 0 0 10px;
+  text-decoration: none;
+  width: 120px;
+}
+
+.header-sign-in-button {
+  display: flex;
+  color: white;
+  width: 120px;
+  height: 30px;
+  font-size: 15px;
+  font-family: FredokaOne;
+  background-color: #000080;
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.header-sign-in-text {
+  font-size: 18px;
+  margin: 1px auto 0 auto;
+}
+
 .header-sign-out-button:hover {
+  padding-top: 1px;
+  font-size: 16px;
+  border-width: 3px;
+  transition: ease-in 0.2s;
+}
+.header-sign-in-button:hover {
   padding-top: 1px;
   font-size: 16px;
   border-width: 3px;

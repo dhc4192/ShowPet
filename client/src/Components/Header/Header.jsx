@@ -31,12 +31,18 @@ export default function Header(props) {
                   className="header-sign-out-button"
                   onClick={props.handleSignOut}
                 >
-                  <p className='header-sign-out-text'>Sign Out</p>
+                  <p className="header-sign-out-text">Sign Out</p>
                 </button>
               </Link>
             </div>
           </div>
-        ) : null}
+        ) : (
+          <Link className="header-sign-in-link" to="/">
+            <button className="header-sign-in-button">
+              <p className="header-sign-in-text">Sign In</p>
+            </button>
+          </Link>
+        )}
 
         <Link className="header-add-link" to="/add/pet">
           <button className="header-add-button">
