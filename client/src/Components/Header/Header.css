@@ -92,15 +92,14 @@
   display: flex;
   margin: 19px 0 0 10px;
   text-decoration: none;
-  width: 120px;
+  width: 150px;
 }
 
 .header-sign-in-button {
   display: flex;
   color: white;
-  width: 120px;
+  width: 150px;
   height: 30px;
-  font-size: 15px;
   font-family: FredokaOne;
   background-color: #000080;
   border-radius: 5px;
@@ -108,8 +107,8 @@
 }
 
 .header-sign-in-text {
-  font-size: 18px;
-  margin: 1px auto 0 auto;
+  font-size: 15px;
+  margin: 4px auto 0 auto;
 }
 
 .header-sign-out-button:hover {
@@ -223,5 +222,13 @@
   }
   .header-add-link {
     display: none;
+  }
+  .header-sign-in-link {
+    margin-left: auto;
+    margin-top: 55px;
+  }
+  .header-sign-in-text {
+    font-size: 15px;
+    margin: 4px auto 0 auto;
   }
 }

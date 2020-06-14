@@ -39,7 +39,7 @@ export default function Header(props) {
         ) : (
           <Link className="header-sign-in-link" to="/">
             <button className="header-sign-in-button">
-              <p className="header-sign-in-text">Sign In</p>
+              <p className="header-sign-in-text">Sign In/ Sign Up</p>
             </button>
           </Link>
         )}
