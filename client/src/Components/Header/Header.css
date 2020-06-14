@@ -47,13 +47,13 @@
   display: flex;
   margin: 3px 0 0 10px;
   text-decoration: none;
-  width: 83px;
+  width: 90px;
 }
 
 .header-sign-out-button {
   display: flex;
   color: white;
-  width: 83px;
+  width: 90px;
   height: 30px;
   font-size: 15px;
   font-family: FredokaOne;
@@ -63,8 +63,8 @@
 }
 
 .header-sign-out-text {
-  font-size: 16px;
-  margin: 3px auto 0 auto;
+  font-size: 15px;
+  margin: 4px auto 0 auto;
 }
 
 .header-add-link {
@@ -89,9 +89,9 @@
 }
 
 .header-sign-out-button:hover {
-  padding-top: 3px;
-  font-size: 15px;
-  border-width: 5px;
+  padding-top: 1px;
+  font-size: 16px;
+  border-width: 3px;
   transition: ease-in 0.2s;
 }
 .header-add-button:hover {
