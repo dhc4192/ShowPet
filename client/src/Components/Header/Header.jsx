@@ -21,11 +21,11 @@ export default function Header(props) {
         {props.currentUser ? (
           <div className="main-header-welcome-container">
             <div className="header-welcome-container">
-              <p className="header-welcome-user">
+              <div className="header-welcome-user">
                 <p className="header-welcome-text">
                   Welcome, {props.currentUser.username}
                 </p>
-              </p>
+              </div>
               <Link className="header-sign-out-link" to="/">
                 <button
                   className="header-sign-out-button"

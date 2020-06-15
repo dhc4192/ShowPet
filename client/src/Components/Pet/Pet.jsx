@@ -38,7 +38,7 @@ export default class Pet extends Component {
                 <div className="edit-delete-container">
                   <Link className="pet-edit-link" to={`/pets/${pet.id}/edit`}>
                     <button className="pet-edit-button">
-                      <img className="pet-edit-icon" src={EditIcon} />{" "}
+                      <img className="pet-edit-icon" src={EditIcon} alt='edit icon'/>
                       <span className="pet-edit-text">Edit</span>
                     </button>
                   </Link>
@@ -47,7 +47,7 @@ export default class Pet extends Component {
                       className="pet-delete-button"
                       onClick={() => destroyPet(pet.id)}
                     >
-                      <img className="pet-delete-icon" src={DeleteIcon} />
+                      <img className="pet-delete-icon" src={DeleteIcon} alt='trash can icon'/>
                       <span className="pet-delete-text">Delete</span>
                     </button>
                   </Link>
@@ -60,19 +60,19 @@ export default class Pet extends Component {
             <p className="pet-descriptions">
               <span className="pet-descriptions-title">Name:</span>
               <br />
-              {pet.name} <hr />
+              {pet.name}
             </p>
             <p className="pet-descriptions">
               <span className="pet-descriptions-title">Breed:</span>
               <br />
-              {pet.breed} <hr />
+              {pet.breed}
             </p>
             <p className="pet-descriptions">
               <span className="pet-descriptions-title">Age:</span>
               <br />
-              {pet.age} <hr />
+              {pet.age}
             </p>
-            <p className="pet-descriptions">
+            <p className="pet-descriptions-last">
               <span className="pet-descriptions-title">Description:</span>
               <br />
               {pet.description}

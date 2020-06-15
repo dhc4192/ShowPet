@@ -55,7 +55,7 @@ export default class SignUp extends Component {
                     name="username"
                     placeholder="Username"
                     value={username}
-                    maxlength="15"
+                    maxLength="15"
                     onChange={this.handleChange}
                   />
                 </label>
