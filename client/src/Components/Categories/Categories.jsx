@@ -19,6 +19,7 @@ export default class Categories extends Component {
             <span className="categories-add-text">Add Pet</span>
           </button>
         </Link>
+        
         <select
           className="categories-drop-down"
           onChange={handleCategoryChange}
