@@ -25,6 +25,9 @@
 ## Overview
 
 _**ShowPets** is an application where users will be able to show off their loving pets! Users will be able to add an image along with other information about their pets such as, name, age and a brief description. Users will be able to view all of the pets uploaded, however, they will be able to edit only their own posts._
+<br>
+
+_Link: http://showpets.surge.sh/_
 
 [🔝](#ShowPets)
 
@@ -169,24 +172,24 @@ src
 
 | Task                  | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------- | :------: | :------------: | :-----------: | :---------: |
-| Back-End Data         |    H     |     3 hrs      |      hrs      |     hrs     |
-| Back-End Routes       |    H     |     3 hrs      |      hrs      |     hrs     |
-| Back-End CRUD         |    H     |     3 hrs      |      hrs      |     hrs     |
-| Header                |    M     |      1 hr      |      hrs      |     hrs     |
-| Sign-In page          |    M     |      1 hr      |      hrs      |     hrs     |
-| Sign-In functionality |    H     |     2 hrs      |      hrs      |     hrs     |
-| Sign-Up page          |    M     |      1 hr      |      hrs      |     hrs     |
-| Sign-Up functionality |    H     |     2 hrs      |      hrs      |     hrs     |
-| Api-Helper            |    H     |     2 hrs      |      hrs      |     hrs     |
-| Pets                  |    H     |     3 hrs      |      hrs      |     hrs     |
-| Pet                   |    H     |     3 hrs      |      hrs      |     hrs     |
-| Categories            |    M     |     3 hrs      |      hrs      |     hrs     |
-| CreatePet             |    H     |     3 hrs      |      hrs      |     hrs     |
-| UpdatePet             |    H     |     3 hrs      |      hrs      |     hrs     |
-| DeletePet             |    H     |     3 hrs      |      hrs      |     hrs     |
-| CSS                   |    H     |     8 hrs      |      hrs      |     hrs     |
-| Unexpected Debugging  |    H     |     3 hrs      |      hrs      |     hrs     |
-| TOTAL                 |          |     47 hrs     |      hrs      |     hrs     |
+| Back-End Data         |    H     |     3 hrs      |     2hrs      |    2hrs     |
+| Back-End Routes       |    H     |     3 hrs      |      1hr      |     1hr     |
+| Back-End CRUD         |    H     |     3 hrs      |      2hr      |    2hrs     |
+| Header                |    M     |      1 hr      |      1hr      |     1hr     |
+| Sign-In page          |    M     |      1 hr      |      1hr      |     1hr     |
+| Sign-In functionality |    H     |     2 hrs      |      1hr      |     1hr     |
+| Sign-Up page          |    M     |      1 hr      |      1hr      |     1hr     |
+| Sign-Up functionality |    H     |     2 hrs      |      1hr      |     1hr     |
+| Api-Helper            |    H     |     2 hrs      |      1hr      |     1hr     |
+| Pets                  |    H     |     3 hrs      |      1hr      |     1hr     |
+| Pet                   |    H     |     3 hrs      |      1hr      |     1hr     |
+| Categories            |    M     |     3 hrs      |     4hrs      |    4hrs     |
+| CreatePet             |    H     |     3 hrs      |     10hrs     |    10hrs    |
+| UpdatePet             |    H     |     3 hrs      |     4hrs      |    4hrs     |
+| DeletePet             |    H     |     3 hrs      |      1hr      |     1hr     |
+| CSS                   |    H     |     8 hrs      |     8hrs      |    8hrs     |
+| Unexpected Debugging  |    H     |     3 hrs      |     .5hrs     |    .5hrs    |
+| TOTAL                 |          |     47 hrs     |    40.5hrs    |   40.5hrs   |
 
 [🔝](#ShowPets)
 
@@ -214,7 +217,20 @@ src
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> The following code allowed me to map the pet data, then filter out the pets with the corresponding category id, and display the data in reverse.
+
+```
+{pets
+        .filter((pet) => {
+          if (selectedCategory.length === 0) {
+            return true;
+          } else {
+            return pet.category_id === parseInt(selectedCategory);
+          }
+        })
+        .reverse()
+        .map((pet) => (
+```
 
 [🔝](#ShowPets)
 
