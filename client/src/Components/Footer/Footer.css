@@ -1,0 +1,35 @@
+.main-footer-container {
+  display: flex;
+  background-color: #000085;
+  margin: 50px auto 0 auto;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  height: 40px;
+  width: 100%;
+}
+
+.footer-container {
+  margin: 0 auto;
+}
+
+.footer-icon {
+  margin: 0;
+}
+
+.footer-github-icon {
+  margin: 0 10px 0 0;
+  font-size: 35px;
+  color: white;
+}
+
+.footer-linkedin-icon {
+  font-size: 35px;
+  color: white;
+}
+
+.footer-text {
+  margin-top: 0;
+  color: white;
+  font-size: 13px;
+}

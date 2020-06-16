@@ -9,6 +9,7 @@ import {
 import Header from "./Components/Header/Header";
 import Main from "./Components/Main/Main";
 import "./App.css";
+import Footer from "./Components/Footer/Footer";
 
 export default class App extends Component {
   state = {
@@ -56,6 +57,9 @@ export default class App extends Component {
           handleSignUpSubmit={this.handleSignUpSubmit}
           currentUser={this.state.currentUser}
         />
+        <Route path="/home">
+          <Footer />
+        </Route>
       </div>
     );
   }
